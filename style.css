@@ -321,5 +321,88 @@ footer {
     font-size: 0.8em;
 }
 
+/* Ensure consistent layout */
+.slider-container {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.title {
+    font-size: 2.5rem; /* Slightly larger title */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: flex-start; /* Keep the books aligned to the left */
+    align-items: center;
+    overflow: hidden; /* Remove visible slider */
+    width: 100%; /* Ensure it fits within the container */
+}
+
+.product {
+    position: relative;
+    width: 220px; /* Book size */
+    margin-right: 10px; /* Spacing between books */
+    flex-shrink: 0; /* Ensure the books don't shrink */
+}
+
+.book-image {
+    width: 100%;
+    height: 330px; /* Height to match width */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.plus-icon, .magnifier-icon {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+
+
 
 
