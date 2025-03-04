@@ -9,7 +9,6 @@
 </head>
 <body>
 
-    <!-- Header and Navigation -->
     <header>
         <nav class="navbar">
             <div class="logo">ReadScape</div>
@@ -33,80 +32,140 @@
                 <li><a href="#">Login</a></li>
                 <div class="cart-icon">
                     <a href="#"><img src="shopping-cart.png" alt="Cart"></a>
-                    <span class="cart-count">0</span> <!-- Cart count -->
+                    <span class="cart-count">0</span>
+                    <div class="cart-box">
+                        <button class="close-cart-btn">X</button>
+                        <div class="cart-items"></div>
+                        <div class="cart-total">Total: $0.00</div>
+                        <div class="cart-actions">
+                            <button class="clear-cart-btn">Clear Cart</button>
+                            <a href="checkout.html" class="checkout-btn">Checkout</a>
+                        </div>
+                    </div>
                 </div>
             </ul>
             <div class="hamburger">&#9776;</div>
         </nav>
     </header>
-
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>Welcome to ReadScape</h1>
             <p>Discover a world of books at your fingertips</p>
-            <a href="#" class="cta-btn">Shop Now</a>
-        </div>
-    </section>
 
-    <!-- Product Section -->
-    <section class="product-grid">
-        <h1>Our Top Picks</h1>
-        <div class="grid">
-            <div class="product">
-                <img src="thesilentp.png" alt="Book 1">
-                <p>Thriller and Mystery</p>
-            </div>
-            <div class="product">
-                <img src="crimeandpun.png" alt="Book 2">
-                <p>Philosophy</p>
-            </div>
-            <div class="product">
-                <img src="atomichabits.png" alt="Book 3">
-                <p>Educational</p>
-            </div>
-
-            <div class="product">
-                <img src="prideandprejudice.png" alt="Book 4">
-                <p>Romance</p>
-            </div>
-
-            <div class="product">
-                <img src="quran.png" alt="Book 5">
-                <p>Religion</p>
-            </div>
-
-            <div class="product">
-                <img src="littleng.png" alt="Book 6">
-                <p>Children</p>
-            </div>
-
-
-
+            
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search for books" id="search-bar">
+        <button class="search-btn" id="search-btn">
+            <i class="fas fa-search"></i> <!-- Font Awesome search icon -->
+        </button>
+    </div>
 
         </div>
     </section>
 
-    <!-- Feedback Section 
-     <section class="feedback-section">
-        <h2>Customer Feedback</h2>
-        <form action="#" method="POST">
-            <label for="name">Your Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
-            
-            <label for="email">Your Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
-            
-            <label for="feedback">Your Feedback:</label><br>
-            <textarea id="feedback" name="feedback" rows="4" placeholder="Leave your feedback here"></textarea><br><br>
-            
-            <button type="submit">Submit Feedback</button>
-        </form>
-    </section>>
     
 
-    <! Footer -->
-    <footer>
+    <section class="slider-container">
+        <h1 class="title">Our Top Picks</h1>
+        <div class="arrow left-arrow">&#8592;</div>
+        <div class="product-grid"><div class="product" data-id="1" data-title="The Silent Patient" data-price="15" data-image="thesilentp.png">
+            <img src="thesilentp.png" alt="Book 1" class="book-image">
+            <div class="overlay">
+                <button class="plus-icon">+</button>
+                <button class="magnifier-icon">&#128269;</button>
+            </div>
+            <p>Thriller and Mystery</p>
+        </div>
+        <div class="product" data-id="2" data-title="Crime and Punishment" data-price="20" data-image="crimeandpun.png">
+            <img src="crimeandpun.png" alt="Book 2" class="book-image">
+            <div class="overlay">
+                <button class="plus-icon">+</button>
+                <button class="magnifier-icon">&#128269;</button>
+            </div>
+            <p>Philosophy</p>
+        </div>
+        <div class="product" data-id="3" data-title="Atomic Habits" data-price="18" data-image="atomichabits.png">
+            <img src="atomichabits.png" alt="Book 3" class="book-image">
+            <div class="overlay">
+                <button class="plus-icon">+</button>
+                <button class="magnifier-icon">&#128269;</button>
+            </div>
+            <p>Educational</p>
+        </div>
+        <div class="product" data-id="4" data-title="Pride and Prejudice" data-price="12" data-image="prideandprejudice.png">
+            <img src="prideandprejudice.png" alt="Book 4" class="book-image">
+            <div class="overlay">
+                <button class="plus-icon">+</button>
+                <button class="magnifier-icon">&#128269;</button>
+            </div>
+            <p>Romance</p>
+        </div>
+        <div class="product" data-id="5" data-title="Quran" data-price="25" data-image="quran.png">
+            <img src="quran.png" alt="Book 5" class="book-image">
+            <div class="overlay">
+                <button class="plus-icon">+</button>
+                <button class="magnifier-icon">&#128269;</button>
+            </div>
+            <p>Religion</p>
+        </div>
+        <div class="product" data-id="6" data-title="Little Ng" data-price="10" data-image="littleng.png">
+            <img src="littleng.png" alt="Book 6" class="book-image">
+            <div class="overlay">
+                <button class="plus-icon">+</button>
+                <button class="magnifier-icon">&#128269;</button>
+            </div>
+            <p>Children</p>
+        </div><div class="product" data-id="7" data-title="The Great Gatsby" data-price="14" data-image="greatgatsby.png">
+            <img src="greatgatsby.png" alt="Book 7" class="book-image">
+            <div class="overlay">
+                <button class="plus-icon">+</button>
+                <button class="magnifier-icon">&#128269;</button>
+            </div>
+            <p>Mystery</p>
+        </div>
+        <div class="product" data-id="8" data-title="To Kill a Mockingbird" data-price="16" data-image="tokillamockingbird.png">
+            <img src="tokillamockingbird.png" alt="Book 8" class="book-image">
+            <div class="overlay">
+                <button class="plus-icon">+</button>
+                <button class="magnifier-icon">&#128269;</button>
+            </div>
+            <p>Romance</p>
+        </div>
+        <div class="product" data-id="9" data-title="1984" data-price="13" data-image="1984.png">
+            <img src="1984.png" alt="Book 9" class="book-image">
+            <div class="overlay">
+                <button class="plus-icon">+</button>
+                <button class="magnifier-icon">&#128269;</button>
+            </div>
+            <p>Fansaty</p>
+        </div>
+        <div class="product" data-id="10" data-title="The Lord of the Rings" data-price="22" data-image="lordoftherings.png">
+            <img src="lordoftherings.png" alt="Book 10" class="book-image">
+            <div class="overlay">
+                <button class="plus-icon">+</button>
+                <button class="magnifier-icon">&#128269;</button>
+            </div>
+            <p>Romance</p>
+        </div>
+        <div class="product" data-id="11" data-title="The Hitchhiker's Guide to the Galaxy" data-price="17" data-image="hitchhikers.png">
+            <img src="hitchhikers.png" alt="Book 11" class="book-image">
+            <div class="overlay">
+                <button class="plus-icon">+</button>
+                <button class="magnifier-icon">&#128269;</button>
+                </div>
+                <p>Religion</p>
+            </div>
+            <div class="product" data-id="12" data-title="The Da Vinci Code" data-price="19" data-image="davincicode.png">
+                <img src="davincicode.png" alt="Book 12" class="book-image">
+                <div class="overlay">
+                    <button class="plus-icon">+</button>
+                    <button class="magnifier-icon">&#128269;</button>
+                </div>
+                <p>Thriller</p>
+            </div>
+        </div>
+        <div class="arrow right-arrow">&#8594;</div>
+    </section><footer>
         <div class="footer-content">
             <p>&copy; 2025 ReadScape. All rights reserved.</p>
             <ul class="social-media">
@@ -116,7 +175,6 @@
             </ul>
         </div>
     </footer>
-
+    <script src="main.js"></script>
 </body>
 </html>
-
