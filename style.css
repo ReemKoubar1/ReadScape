@@ -35,7 +35,7 @@ h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: -1000;
 }
 
 .logo {
@@ -61,6 +61,7 @@ nav-links a {
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    
 }
 
 .nav-links a:hover {
@@ -503,6 +504,62 @@ p {
     text-align: center;
     cursor: pointer;
 }
+
+/* Container for the search bar */
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field styling */
+.search-input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+/* Focus effect on input */
+.search-input:focus {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+/* Search button */
+.search-btn {
+    position: absolute;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: #999;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Search button hover effect */
+.search-btn:hover {
+    color: #007BFF;
+}
+
+.search-btn:focus {
+    outline: none;
+}
+
 
 
 

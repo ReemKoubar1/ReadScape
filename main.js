@@ -149,3 +149,24 @@ cartBox.addEventListener('click', (event) => {
 document.querySelector('.close-cart-btn').addEventListener('click', () => {
     cartBox.classList.remove('active');
 });
+
+const searchBar = document.getElementById('search-bar');
+const searchButton = document.getElementById('search-btn');
+
+searchButton.addEventListener('click', () => {
+    const query = searchBar.value.trim();
+    if (query) {
+        //implementing the search functionality for later
+        alert('Searching for: ' + query); // Example placeholder action
+    }
+});
+
+// Enter key
+searchBar.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        const query = searchBar.value.trim();
+        if (query) {
+            alert('Searching for: ' + query); // Example placeholder action
+        }
+    }
+});
