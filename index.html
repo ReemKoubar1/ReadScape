@@ -3,178 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ReadScape</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
-
     <header>
-        <nav class="navbar">
-            <div class="logo">ReadScape</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn" aria-haspopup="true" aria-expanded="false">Categories</a>
-                    <ul class="dropdown-content" role="menu">
-                        <li role="menuitem"><a href="#">Philosophy</a></li>
-                        <li role="menuitem"><a href="#">Thriller and Mystery</a></li>
-                        <li role="menuitem"><a href="#">Self Help</a></li>
-                        <li role="menuitem"><a href="#">Children's Books</a></li>
-                        <li role="menuitem"><a href="#">Romance</a></li>
-                        <li role="menuitem"><a href="#">Religion</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Bestsellers</a></li>
-                <li><a href="#">New Arrivals</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Authors</a></li>
-                <li><a href="Login.html">Login</a></li>
-                <div class="cart-icon">
-                    <a href="#"><img src="shopping-cart.png" alt="Cart"></a>
-                    <span class="cart-count">0</span>
-                    <div class="cart-box">
-                        <button class="close-cart-btn">X</button>
-                        <div class="cart-items"></div>
-                        <div class="cart-total">Total: $0.00</div>
-                        <div class="cart-actions">
-                            <button class="clear-cart-btn">Clear Cart</button>
-                            <a href="checkout.html" class="checkout-btn">Checkout</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="flex-header desktop">
+            <div class="logo">
+                <img src="images/logo.png" alt="ReadScape Logo">
+            </div>
+
+            <ul class="links desktop">
+                <li class="link"><a href="/"><i class="fas fa-home"></i> Home</a></li>
+                <li class="link"><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li class="link"><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                <li class="link"><a href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+                <li class="link"><a href="authors.html"><i class="fas fa-users"></i> Authors</a></li>
             </ul>
-            <div class="hamburger">&#9776;</div>
-        </nav>
-    </header><section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to ReadScape</h1>
-            <p>Discover a world of books at your fingertips</p>
-            
+
+            <div class="actions">
+                <div class="cart">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="badge">0</span></a>
+                </div>
+                <div class="login">
+                    <a href="login.html"><i class="fas fa-user"></i> Login</a>
+                </div>
+            </div>
         </div>
 
-        <div class="search-container">
-            <input type="text" class="search-input" placeholder="Search for books" id="search-bar">
-            <button class="search-btn" id="search-btn">
-                <i class="fas fa-search"></i> <!-- Font Awesome search icon -->
-            </button>
-        </div>
-    
+        <div class="mobile">
+            <div class="flex-header">
+                <div class="logo">
+                    <img src="images/logo.png" alt="ReadScape Logo">
+                </div>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
+            <ul class="links">
+                <li class="link"><a href="/"><i class="fas fa-home"></i> Home</a></li>
+                <li class="link"><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li class="link"><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                <li class="link"><a href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+                <li class="link"><a href="authors.html"><i class="fas fa-users"></i> Authors</a></li>
+                <li class="link"><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
+                <li class="link"><a href="cart.html"><i class="fas fa-shopping-cart"></i> My Cart</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="left-hero">
+            <h1>Welcome to ReadScape</h1>
+            <p>Discover a world of knowledge and imagination. Explore thousands of books, connect with authors, and find your next great read.</p>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search for books, authors...">
+                <button><i class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+
+        <div class="right-hero">
+            <div class="transparent-image"></div>
+        </div>
     </section>
 
+    <section class="about-section">
+        <div class="about-left">
+            <img src="images/about.png" alt="About Us Image">
+        </div>
 
+        <div class="about-right">
+            <h2>About ReadScape</h2>
+            <p>At ReadScape, we believe in the power of books to inspire, educate, and transform lives. Our mission is to connect readers with authors and provide access to a vast library of knowledge and imagination.</p>
 
-    <section class="slider-container">
-        <h1 class="title">Our Top Picks</h1>
-        <div class="arrow left-arrow">&#8592;</div>
-        <div class="product-grid"><div class="product" data-id="1" data-title="The Silent Patient" data-price="15" data-image="thesilentp.png">
-            <img src="thesilentp.png" alt="Book 1" class="book-image">
-            <div class="overlay">
-                <button class="plus-icon">+</button>
-                <button class="magnifier-icon">&#128269;</button>
-            </div>
-            <p>Thriller and Mystery</p>
-        </div>
-        <div class="product" data-id="2" data-title="Crime and Punishment" data-price="20" data-image="crimeandpun.png">
-            <img src="crimeandpun.png" alt="Book 2" class="book-image">
-            <div class="overlay">
-                <button class="plus-icon">+</button>
-                <button class="magnifier-icon">&#128269;</button>
-            </div>
-            <p>Philosophy</p>
-        </div>
-        <div class="product" data-id="3" data-title="Atomic Habits" data-price="18" data-image="atomichabits.png">
-            <img src="atomichabits.png" alt="Book 3" class="book-image">
-            <div class="overlay">
-                <button class="plus-icon">+</button>
-                <button class="magnifier-icon">&#128269;</button>
-            </div>
-            <p>Educational</p>
-        </div>
-        <div class="product" data-id="4" data-title="Pride and Prejudice" data-price="12" data-image="prideandprejudice.png">
-            <img src="prideandprejudice.png" alt="Book 4" class="book-image">
-            <div class="overlay">
-                <button class="plus-icon">+</button>
-                <button class="magnifier-icon">&#128269;</button>
-            </div>
-            <p>Romance</p>
-        </div>
-        <div class="product" data-id="5" data-title="Quran" data-price="25" data-image="quran.png">
-            <img src="quran.png" alt="Book 5" class="book-image">
-            <div class="overlay">
-                <button class="plus-icon">+</button>
-                <button class="magnifier-icon">&#128269;</button>
-            </div>
-            <p>Religion</p>
-        </div>
-        <div class="product" data-id="6" data-title="Little Ng" data-price="10" data-image="littleng.png">
-            <img src="littleng.png" alt="Book 6" class="book-image">
-            <div class="overlay">
-                <button class="plus-icon">+</button>
-                <button class="magnifier-icon">&#128269;</button>
-            </div>
-            <p>Children</p>
-        </div><div class="product" data-id="7" data-title="The Great Gatsby" data-price="14" data-image="greatgatsby.png">
-            <img src="greatgatsby.png" alt="Book 7" class="book-image">
-            <div class="overlay">
-                <button class="plus-icon">+</button>
-                <button class="magnifier-icon">&#128269;</button>
-            </div>
-            <p>Classic</p>
-        </div>
-        <div class="product" data-id="8" data-title="To Kill a Mockingbird" data-price="16" data-image="tokillamockingbird.png">
-            <img src="tokillamockingbird.png" alt="Book 8" class="book-image">
-            <div class="overlay">
-                <button class="plus-icon">+</button>
-                <button class="magnifier-icon">&#128269;</button>
-            </div>
-            <p>Classic</p>
-        </div>
-        <div class="product" data-id="9" data-title="1984" data-price="13" data-image="1984.png">
-            <img src="1984.png" alt="Book 9" class="book-image">
-            <div class="overlay">
-                <button class="plus-icon">+</button>
-                <button class="magnifier-icon">&#128269;</button>
-            </div>
-            <p>Dystopian</p>
-        </div>
-        <div class="product" data-id="10" data-title="The Lord of the Rings" data-price="22" data-image="lordoftherings.png">
-            <img src="lordoftherings.png" alt="Book 10" class="book-image">
-            <div class="overlay">
-                <button class="plus-icon">+</button>
-                <button class="magnifier-icon">&#128269;</button>
-            </div>
-            <p>Fantasy</p>
-        </div>
-        <div class="product" data-id="11" data-title="The Hitchhiker's Guide to the Galaxy" data-price="17" data-image="hitchhikers.png">
-            <img src="hitchhikers.png" alt="Book 11" class="book-image">
-            <div class="overlay">
-                <button class="plus-icon">+</button>
-                <button class="magnifier-icon">&#128269;</button>
-                </div>
-                <p>Science Fiction</p>
-            </div>
-            <div class="product" data-id="12" data-title="The Da Vinci Code" data-price="19" data-image="davincicode.png">
-                <img src="davincicode.png" alt="Book 12" class="book-image">
-                <div class="overlay">
-                    <button class="plus-icon">+</button>
-                    <button class="magnifier-icon">&#128269;</button>
-                </div>
-                <p>Thriller</p>
-            </div>
-        </div>
-        <div class="arrow right-arrow">&#8594;</div>
-    </section><footer>
-        <div class="footer-content">
-            <p>&copy; 2025 ReadScape. All rights reserved.</p>
-            <ul class="social-media">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
+            <ul class="features-list">
+                <li><i class="fas fa-book"></i> Thousands of books across genres</li>
+                <li><i class="fas fa-users"></i> Connect with authors and readers</li>
+                <li><i class="fas fa-globe"></i> Accessible worldwide</li>
+                <li><i class="fas fa-heart"></i> Passionate about storytelling</li>
             </ul>
+
+            <a href="about.html" class="cta-button">Read more</a>
+        </div>
+    </section>
+    <section class="product-section">
+        <h2>Bestsellers</h2>
+        <div class="arrow left" onclick="scrollSection('bestsellers', -1)">&#8592;</div>
+        <div class="arrow right" onclick="scrollSection('bestsellers', 1)">&#8594;</div>
+        <div class="product-container" id="bestsellers"></div>
+    </section>
+
+    <section class="product-section">
+        <h2>New Arrivals</h2>
+        <div class="arrow left" onclick="scrollSection('new-arrivals', -1)">&#8592;</div>
+        <div class="arrow right" onclick="scrollSection('new-arrivals', 1)">&#8594;</div>
+        <div class="product-container" id="new-arrivals"></div>
+    </section>
+
+    <section class="product-section">
+        <h2>Products</h2>
+        <div class="arrow left" onclick="scrollSection('products', -1)">&#8592;</div>
+        <div class="arrow right" onclick="scrollSection('products', 1)">&#8594;</div>
+        <div class="product-container" id="products"></div>
+    </section>
+    <section class="faqs-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">What is ReadScape?</button>
+                <div class="faq-answer">
+                    ReadScape is an online platform where you can explore thousands of books, connect with authors, and find your next great read.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How do I purchase a book?</button>
+                <div class="faq-answer">
+                    Simply browse our catalog, add your desired books to the cart, and proceed to checkout.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do you offer refunds?</button>
+                <div class="faq-answer">
+                    Yes, we offer refunds within 30 days of purchase if the product is unused and in its original condition.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <h2>What Our Readers Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <img src="images/user1.jpg" alt="User 1">
+                <p>"ReadScape has transformed my reading experience! The selection is incredible."</p>
+                <h4>- Sarah Johnson</h4>
+            </div>
+            <div class="testimonial-card">
+                <img src="images/user2.jpg" alt="User 2">
+                <p>"I love how easy it is to find new books and connect with authors here."</p>
+                <h4>- John Doe</h4>
+            </div>
+            <div class="testimonial-card">
+                <img src="images/user3.jpg" alt="User 3">
+                <p>"The customer service is outstanding, and delivery is always on time."</p>
+                <h4>- Emily Smith</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section logo-section">
+                <img src="images/logo.png" alt="ReadScape Logo" class="footer-logo">
+                <p>ReadScape is your gateway to a world of books, knowledge, and imagination.</p>
+            </div>
+
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 ReadScape. All rights reserved.</p>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="javascript/header.js"></script>
+    <script src="javascript/home.js"></script>
 </body>
 </html>

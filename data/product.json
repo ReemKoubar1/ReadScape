@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "title": "The Great Gatsby",
+        "price": "$10.99",
+        "category": "Classic",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg/220px-The_Great_Gatsby_Cover_1925_Retouched.jpg"
+    },
+    {
+        "id": 2,
+        "title": "1984",
+        "price": "$9.99",
+        "category": "Dystopian",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/1984first.jpg"
+    },
+    {
+        "id": 3,
+        "title": "To Kill a Mockingbird",
+        "price": "$12.99",
+        "category": "Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Pride and Prejudice",
+        "price": "$8.99",
+        "category": "Romance",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/PrideAndPrejudiceTitlePage.jpg"
+    },
+    {
+        "id": 5,
+        "title": "The Catcher in the Rye",
+        "price": "$11.99",
+        "category": "Coming-of-Age",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/The_Catcher_in_the_Rye_%281951%2C_first_edition_cover%29.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Moby Dick",
+        "price": "$13.99",
+        "category": "Adventure",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Moby_Dick_p510_american.jpg"
+    },
+    {
+        "id": 7,
+        "title": "War and Peace",
+        "price": "$15.99",
+        "category": "Historical Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/War-and-peace-first-edition.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Crime and Punishment",
+        "price": "$10.99",
+        "category": "Psychological Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Crime_and_Punishment_%281866%29.jpg"
+    },
+    {
+        "id": 9,
+        "title": "The Hobbit",
+        "price": "$14.99",
+        "category": "Fantasy",
+        "image": "https://upload.wikimedia.org/wikipedia/en/4/4a/TheHobbit_FirstEdition.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Brave New World",
+        "price": "$9.99",
+        "category": "Science Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/BraveNewWorld_FirstEdition.jpg"
+    },
+    {
+        "id": 11,
+        "title": "The Picture of Dorian Gray",
+        "price": "$10.99",
+        "category": "Gothic Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/The_Picture_of_Dorian_Gray_1891.jpg"
+    },
+    {
+        "id": 12,
+        "title": "Jane Eyre",
+        "price": "$11.99",
+        "category": "Romance",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/03/Jane_Eyre_title_page.jpg"
+    },
+    {
+        "id": 13,
+        "title": "The Odyssey",
+        "price": "$12.99",
+        "category": "Epic Poetry",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Odyssey1.jpg"
+    },
+    {
+        "id": 14,
+        "title": "Frankenstein",
+        "price": "$9.99",
+        "category": "Horror",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Frankenstein_1818_edition_title_page.jpg"
+    },
+    {
+        "id": 15,
+        "title": "Dracula",
+        "price": "$10.99",
+        "category": "Horror",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Dracula_1897_first_edition_cover.jpg"
+    },
+    {
+        "id": 16,
+        "title": "The Adventures of Huckleberry Finn",
+        "price": "$11.99",
+        "category": "Adventure",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Huckleberry_Finn_book.jpg"
+    },
+    {
+        "id": 17,
+        "title": "Les Misérables",
+        "price": "$13.99",
+        "category": "Historical Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Les_Miserables_Cover_1862.jpg"
+    },
+    {
+        "id": 18,
+        "title": "The Divine Comedy",
+        "price": "$14.99",
+        "category": "Epic Poetry",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Divina_Commedia_Laurenziana_Plut_40_1_inf-fol_94v.jpg"
+    },
+    {
+        "id": 19,
+        "title": "The Brothers Karamazov",
+        "price": "$15.99",
+        "category": "Philosophical Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Brothers_Karamazov_1880.jpg"
+    },
+    {
+        "id": 20,
+        "title": "One Hundred Years of Solitude",
+        "price": "$12.99",
+        "category": "Magical Realism",
+        "image": "https://upload.wikimedia.org/wikipedia/en/6/6b/One_Hundred_Years_of_Solitude.jpg"
+    },
+    {
+        "id": 21,
+        "title": "The Lord of the Rings",
+        "price": "$16.99",
+        "category": "Fantasy",
+        "image": "https://upload.wikimedia.org/wikipedia/en/e/e9/First_Single_Volume_Edition_of_The_Lord_of_the_Rings.jpg"
+    },
+    {
+        "id": 22,
+        "title": "Animal Farm",
+        "price": "$9.99",
+        "category": "Satire",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Animal_Farm_First_Edition.jpg"
+    },
+    {
+        "id": 23,
+        "title": "The Alchemist",
+        "price": "$10.99",
+        "category": "Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/en/7/71/The_Alchemist_%28novel%29.jpg"
+    },
+    {
+        "id": 24,
+        "title": "The Road",
+        "price": "$11.99",
+        "category": "Post-Apocalyptic",
+        "image": "https://upload.wikimedia.org/wikipedia/en/1/12/The_Road_%28book%29.jpg"
+    },
+    {
+        "id": 25,
+        "title": "Life of Pi",
+        "price": "$12.99",
+        "category": "Adventure",
+        "image": "https://upload.wikimedia.org/wikipedia/en/4/4f/Life_of_Pi_cover.jpg"
+    },
+    {
+        "id": 26,
+        "title": "The Book Thief",
+        "price": "$13.99",
+        "category": "Historical Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/en/8/87/The_Book_Thief_by_Markus_Zusak.png"
+    },
+    {
+        "id": 27,
+        "title": "A Thousand Splendid Suns",
+        "price": "$14.99",
+        "category": "Historical Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/en/5/5a/A_Thousand_Splendid_Suns.jpg"
+    },
+    {
+        "id": 28,
+        "title": "The Kite Runner",
+        "price": "$15.99",
+        "category": "Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/en/6/62/Kite_runner.jpg"
+    },
+    {
+        "id": 29,
+        "title": "Sapiens: A Brief History of Humankind",
+        "price": "$16.99",
+        "category": "Non-Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/en/5/5a/Sapiens_A_Brief_History_of_Humankind.jpg"
+    },
+    {
+        "id": 30,
+        "title": "Educated",
+        "price": "$17.99",
+        "category": "Memoir",
+        "image": "https://upload.wikimedia.org/wikipedia/en/6/6e/Educated_Tara_Westover.jpg"
+    }
+]

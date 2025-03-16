@@ -1,0 +1,72 @@
+[
+    {
+        "id": 31,
+        "title": "The Midnight Library",
+        "price": "$14.99",
+        "category": "Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/en/8/8d/The_Midnight_Library_by_Matt_Haig.jpg"
+    },
+    {
+        "id": 32,
+        "title": "Klara and the Sun",
+        "price": "$15.99",
+        "category": "Science Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/en/6/6f/Klara_and_the_Sun_cover.jpg"
+    },
+    {
+        "id": 33,
+        "title": "The Four Winds",
+        "price": "$16.99",
+        "category": "Historical Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/en/9/9c/The_Four_Winds_by_Kristin_Hannah.jpg"
+    },
+    {
+        "id": 34,
+        "title": "Project Hail Mary",
+        "price": "$17.99",
+        "category": "Science Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/en/7/7e/Project_Hail_Mary_cover.jpg"
+    },
+    {
+        "id": 35,
+        "title": "The Vanishing Half",
+        "price": "$14.99",
+        "category": "Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/en/5/5b/The_Vanishing_Half_cover.jpg"
+    },
+    {
+        "id": 36,
+        "title": "Circe",
+        "price": "$13.99",
+        "category": "Fantasy",
+        "image": "https://upload.wikimedia.org/wikipedia/en/6/6b/Circe_%28novel%29.jpg"
+    },
+    {
+        "id": 37,
+        "title": "Where the Crawdads Sing",
+        "price": "$12.99",
+        "category": "Mystery",
+        "image": "https://upload.wikimedia.org/wikipedia/en/5/5a/Where_the_Crawdads_Sing_cover.jpg"
+    },
+    {
+        "id": 38,
+        "title": "The Night Watchman",
+        "price": "$15.99",
+        "category": "Historical Fiction",
+        "image": "https://upload.wikimedia.org/wikipedia/en/7/7c/The_Night_Watchman_cover.jpg"
+    },
+    {
+        "id": 39,
+        "title": "Mexican Gothic",
+        "price": "$14.99",
+        "category": "Horror",
+        "image": "https://upload.wikimedia.org/wikipedia/en/8/8d/Mexican_Gothic_cover.jpg"
+    },
+    {
+        "id": 40,
+        "title": "Anxious People",
+        "price": "$13.99",
+        "category": "Comedy",
+        "image": "https://upload.wikimedia.org/wikipedia/en/9/9e/Anxious_People_cover.jpg"
+    }
+]
