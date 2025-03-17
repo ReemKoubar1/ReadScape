@@ -1,0 +1,260 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #ff6600, #ff9966);
+    color: white;
+    
+    
+    overflow: hidden;
+}
+
+.left-hero {
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.left-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.left-hero p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.right-hero {
+    position: relative;
+    width: 50%;
+    height: 300px;
+}
+
+.transparent-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/hero-background.png') no-repeat center center/cover;
+    opacity: 0.8;
+    
+    transition: transform 0.3s ease;
+}
+
+.transparent-image:hover {
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    margin: 20px auto;
+    
+    
+    max-width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-right {
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.about-right h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ff6600;
+}
+
+.about-right p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    font-size: 1rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.features-list i {
+    margin-right: 10px;
+    color: #ff6600;
+    font-size: 1.2rem;
+}
+
+.features-list li:hover {
+    color: #ff6600;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    margin: 20px auto;
+    
+    
+    max-width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-vision:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mission,
+.vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+}
+
+.mission img,
+.vision img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ff6600;
+    border-radius: 50%;
+    transition: border-color 0.3s ease;
+}
+
+.mission img:hover,
+.vision img:hover {
+    border-color: #e65c00;
+}
+
+.mission p,
+.vision p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Team Section */
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    margin: 20px auto;
+    
+    
+    max-width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    max-width: 250px;
+    background: white;
+    padding: 20px;
+    
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ff6600;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.team-member img:hover {
+    border-color: #e65c00;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #ff6600;
+}
+
+.team-member p {
+    font-size: 0.9rem;
+    color: #777;
+}

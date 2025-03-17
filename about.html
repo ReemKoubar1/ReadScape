@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReadScape</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About us</title>
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
 </head>
 <body>
     <header>
@@ -58,112 +59,65 @@
         <div class="left-hero">
             <h1>Welcome to ReadScape</h1>
             <p>Discover a world of knowledge and imagination. Explore thousands of books, connect with authors, and find your next great read.</p>
-
-            <div class="search-bar">
-                <input type="text" placeholder="Search for books, authors...">
-                <button><i class="fas fa-search"></i> Search</button>
-            </div>
         </div>
 
         <div class="right-hero">
             <div class="transparent-image"></div>
         </div>
     </section>
+    <div class="about-container">
 
-    <section class="about-section">
-        <div class="about-left">
-            <img src="images/about.png" alt="About Us Image">
-        </div>
 
         <div class="about-right">
             <h2>About ReadScape</h2>
             <p>At ReadScape, we believe in the power of books to inspire, educate, and transform lives. Our mission is to connect readers with authors and provide access to a vast library of knowledge and imagination.</p>
-
+            
             <ul class="features-list">
                 <li><i class="fas fa-book"></i> Thousands of books across genres</li>
                 <li><i class="fas fa-users"></i> Connect with authors and readers</li>
                 <li><i class="fas fa-globe"></i> Accessible worldwide</li>
                 <li><i class="fas fa-heart"></i> Passionate about storytelling</li>
             </ul>
-
+            
             <a href="about.html" class="cta-button">Read more</a>
         </div>
-    </section>
-    
-    <section class="product-section">
-        <h2>Bestsellers</h2>
-        <div class="arrow left" onclick="scrollSection('bestsellers', -1)">&#8592;</div>
-        <div class="arrow right" onclick="scrollSection('bestsellers', 1)">&#8594;</div>
-        <div class="product-container" id="bestsellers"></div>
-    </section>
+    </div>
 
-    <section class="product-section">
-        <h2>New Arrivals</h2>
-        <div class="arrow left" onclick="scrollSection('new-arrivals', -1)">&#8592;</div>
-        <div class="arrow right" onclick="scrollSection('new-arrivals', 1)">&#8594;</div>
-        <div class="product-container" id="new-arrivals"></div>
-    </section>
-
-    <section class="product-section">
-        <h2>Products</h2>
-        <div class="arrow left" onclick="scrollSection('products', -1)">&#8592;</div>
-        <div class="arrow right" onclick="scrollSection('products', 1)">&#8594;</div>
-        <div class="product-container" id="products"></div>
-    </section>
-    <section class="faqs-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-container">
-            <div class="faq-item">
-                <button class="faq-question">What is ReadScape?</button>
-                <div class="faq-answer">
-                    ReadScape is an online platform where you can explore thousands of books, connect with authors, and find your next great read.
-                </div>
+    <div class="mission-vision">
+        <div class="container">
+            <h2>Our Mission & Vision</h2>
+            <div class="mission">
+                <img src="images/mission.png" alt="Our Mission">
+                <p>Our mission is to cultivate a community where readers and writers can thrive. By offering a rich selection of books and fostering discussions, we aim to ignite a lifelong love for reading.</p>
             </div>
-            <div class="faq-item">
-                <button class="faq-question">How do I purchase a book?</button>
-                <div class="faq-answer">
-                    Simply browse our catalog, add your desired books to the cart, and proceed to checkout.
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">Do you offer refunds?</button>
-                <div class="faq-answer">
-                    Yes, we offer refunds within 30 days of purchase if the product is unused and in its original condition.
-                </div>
+            <div class="vision">
+                <img src="images/vision.png" alt="Our Vision">
+                <p>We envision a world where stories connect, educate, and empower individuals. ReadScape aims to become the ultimate literary hub, making books more accessible and interactive for everyone.</p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="testimonials-section">
-        <h2>What Our Readers Say</h2>
-        <div class="testimonial-container">
-            <div class="testimonial-card">
-                <img src="images/user1.jpg" alt="User 1">
-                <p>"ReadScape has transformed my reading experience! The selection is incredible."</p>
-                <h4>- Sarah Johnson</h4>
+    <div class="team-container">
+        <h2>Meet Our Team</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="images/team1.png" alt="Founder">
+                <h3>Angy</h3>
+                <p>Founder & CEO</p>
             </div>
-            <div class="testimonial-card">
-                <img src="images/user2.jpg" alt="User 2">
-                <p>"I love how easy it is to find new books and connect with authors here."</p>
-                <h4>- John Doe</h4>
+            <div class="team-member">
+                <img src="images/team2.png" alt="Head of Content">
+                <h3>Reem</h3>
+                <p>Head of Content</p>
             </div>
-            <div class="testimonial-card">
-                <img src="images/user3.jpg" alt="User 3">
-                <p>"The customer service is outstanding, and delivery is always on time."</p>
-                <h4>- Emily Smith</h4>
+            <div class="team-member">
+                <img src="images/team3.png" alt="Marketing Lead">
+                <h3>Farah</h3>
+                <p>Marketing Lead</p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="contact-section">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section logo-section">
@@ -205,6 +159,5 @@
         </div>
     </footer>
     <script src="javascript/header.js"></script>
-    <script src="javascript/home.js"></script>
 </body>
 </html>
