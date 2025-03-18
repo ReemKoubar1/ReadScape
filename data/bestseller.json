@@ -4,69 +4,69 @@
         "title": "Harry Potter and the Philosopher's Stone",
         "price": "$9.99",
         "category": "Fantasy",
-        "image": "https://upload.wikimedia.org/wikipedia/en/6/6b/Harry_Potter_and_the_Philosopher%27s_Stone_Book_Cover.jpg"
+        "image": "https://covers.openlibrary.org/b/isbn/9780747532743-L.jpg"
     },
     {
         "id": 52,
         "title": "The Da Vinci Code",
         "price": "$11.99",
         "category": "Thriller",
-        "image": "https://upload.wikimedia.org/wikipedia/en/6/6b/DaVinciCode.jpg"
+        "image": "https://covers.openlibrary.org/b/isbn/9780307474278-L.jpg"
     },
     {
         "id": 53,
         "title": "The Hunger Games",
         "price": "$10.99",
         "category": "Science Fiction",
-        "image": "https://upload.wikimedia.org/wikipedia/en/3/39/The_Hunger_Games_cover.jpg"
+        "image": "https://covers.openlibrary.org/b/isbn/9780439023528-L.jpg"
     },
     {
         "id": 54,
         "title": "Twilight",
         "price": "$8.99",
         "category": "Romance",
-        "image": "https://upload.wikimedia.org/wikipedia/en/6/6e/Twilightbook.jpg"
+        "image": "https://covers.openlibrary.org/b/isbn/9780316015844-L.jpg"
     },
     {
         "id": 55,
         "title": "The Alchemist",
         "price": "$10.99",
         "category": "Fiction",
-        "image": "https://upload.wikimedia.org/wikipedia/en/7/71/The_Alchemist_%28novel%29.jpg"
+        "image": "https://covers.openlibrary.org/b/isbn/9780062315007-L.jpg"
     },
     {
         "id": 56,
         "title": "A Brief History of Time",
         "price": "$12.99",
         "category": "Non-Fiction",
-        "image": "https://upload.wikimedia.org/wikipedia/en/9/9f/A_Brief_History_of_Time.jpg"
+        "image": "https://covers.openlibrary.org/b/isbn/9780553380163-L.jpg"
     },
     {
         "id": 57,
         "title": "The Girl with the Dragon Tattoo",
         "price": "$13.99",
         "category": "Mystery",
-        "image": "https://upload.wikimedia.org/wikipedia/en/0/0c/The_Girl_with_the_Dragon_Tattoo_%28US%29.jpg"
+        "image": "https://covers.openlibrary.org/b/isbn/9780307454546-L.jpg"
     },
     {
         "id": 58,
         "title": "Gone Girl",
         "price": "$11.99",
         "category": "Thriller",
-        "image": "https://upload.wikimedia.org/wikipedia/en/0/0e/Gone_Girl_by_Gillian_Flynn.jpg"
+        "image": "https://covers.openlibrary.org/b/isbn/9780307588371-L.jpg"
     },
     {
         "id": 59,
         "title": "The Fault in Our Stars",
         "price": "$10.99",
         "category": "Romance",
-        "image": "https://upload.wikimedia.org/wikipedia/en/4/41/The_Fault_in_Our_Stars_%28book%29.jpg"
+        "image": "https://covers.openlibrary.org/b/isbn/9780525478812-L.jpg"
     },
     {
         "id": 60,
         "title": "Angels & Demons",
         "price": "$11.99",
         "category": "Thriller",
-        "image": "https://upload.wikimedia.org/wikipedia/en/5/5d/Angelsdemons.jpg"
+        "image": "https://covers.openlibrary.org/b/isbn/9780743493468-L.jpg"
     }
 ]
