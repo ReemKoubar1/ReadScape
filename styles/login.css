@@ -3,45 +3,29 @@ body {
     font-family: 'Arial', sans-serif;
     box-sizing: border-box;
     transition: all 0.4s;
+    margin: 0;
+    padding: 0;
+    background: url('https://img.atlasobscura.com/84tF_0nhxuJ_rwA2DqXDL_eS8c-oLueq1wRGe-sqe1g/rs:fill:12000:12000/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy9kZWRhNTRiNGNm/NzAyMGY5MjdfMzc2/MTUyNjI4XzI0OWUz/NjMwYzBfYi5qcGc.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .auth-container {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    transition: transform 0.5s ease-in-out;
-}
-.auth-container form{
-    width: 100%;
-}
-.image-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    overflow: hidden;
+    justify-content: center;
+
 }
 
-.image-section img {
+.auth-container form {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
-.left-image {
-    order: 1;
-}
-
-.right-image {
-    order: 3;
-    display: none; /* Hidden by default */
-}
-
-/* Form Sections */
 .form-section {
     flex: 1;
     display: flex;
@@ -49,7 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 40px;
-    background: white;
+    background: rgba(255, 255, 255, 0.8);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -58,20 +42,52 @@ body {
 
 .login-form {
     order: 2;
-    left: 0;
-    flex: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    flex: 0 0 auto;
     max-width: 500px;
     width: 100%;
+    position: absolute;
 }
+
+.register-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Aligning inputs to the center */
+    width: 100%;
+    max-width: 400px; 
+}
+
+.register-form form div {
+    width: 100%;
+    max-width: 400px; /* Increase max width */
+    align-items: center;
+}
+
+.register-form input {
+    width: 100%; 
+    padding: 12px 40px;
+    font-size: 18px;
+}
+
 
 .register-form {
-    order: 2;
-    left: 100%;
+    
+    display: flex;
+    justify-content: center; /* Centers the form horizontally */
+    align-items: center; /* Centers the form vertically */
+    height: 100vh;
     max-width: 500px;
     width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;  /* Hide initially */
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
 }
 
-/* Form Styling */
 .form-section h2 {
     font-size: 32px;
     font-weight: bold;
@@ -82,7 +98,7 @@ body {
 
 .form-section input {
     width: 84%;
-    padding: 12px 40px 12px 40px; /* Add padding for icons */
+    padding: 12px 40px 12px 40px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -96,7 +112,6 @@ body {
     border-color: #6a11cb;
 }
 
-/* Icon Styling */
 .form-section .input-icon {
     position: absolute;
     left: 15px;
@@ -146,7 +161,6 @@ body {
     color: #ffdd57;
 }
 
-/* Register Active State */
 .auth-container.register-active .left-image {
     display: none;
 }
@@ -160,7 +174,9 @@ body {
 }
 
 .auth-container.register-active .register-form {
-    left: 0;
+    
+    opacity: 1;
+    visibility: visible;
 }
 
 @media (max-width: 768px) {
@@ -179,8 +195,17 @@ body {
         padding: 20px;
     }
 
+  
+.auth-container.register-active .login-form {
+    opacity: 0;
+    visibility: hidden;
+}
+
     .auth-container.register-active .login-form,
     .auth-container.register-active .register-form {
         left: 0;
     }
+
+    
 }
+
