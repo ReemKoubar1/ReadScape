@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Keep your exact same head content -->
+    <link rel="stylesheet" href="styles/cart.css"> <!-- New CSS file -->
+</head>
+<body>
+   
+
+    <main class="cart-page">
+        <h1>Your Shopping Cart</h1>
+        
+        <div class="cart-items-container">
+            <!-- Cart items will appear here dynamically -->
+        </div>
+        
+        <div class="cart-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span class="subtotal">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping:</span>
+                <span>FREE</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total:</span>
+                <span class="total-price">$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+        
+        <div class="shipping-section">
+            <h2>Shipping Information</h2>
+            <form class="shipping-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="text" placeholder="Address" required>
+                <input type="text" placeholder="City" required>
+                <input type="text" placeholder="ZIP Code" required>
+                <button type="submit">Save Address</button>
+            </form>
+        </div>
+    </main>
+
+   
+
+    <script src="javascript/cart.js"></script> 
+</body>
+</html>
