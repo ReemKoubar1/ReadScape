@@ -5,8 +5,8 @@ body {
     transition: all 0.4s;
     margin: 0;
     padding: 0;
-    background: url('https://img.atlasobscura.com/84tF_0nhxuJ_rwA2DqXDL_eS8c-oLueq1wRGe-sqe1g/rs:fill:12000:12000/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy9kZWRhNTRiNGNm/NzAyMGY5MjdfMzc2/MTUyNjI4XzI0OWUz/NjMwYzBfYi5qcGc.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background: url('https://images.squarespace-cdn.com/content/v1/612514603ab7f8559008fdb2/628650c4-722d-4773-847f-f48469eab2da/shiromani-kant-tHKlDb5EzN4-unsplash.jpg') no-repeat center center fixed;
+    background-size: 100%
 }
 
 .auth-container {
@@ -33,7 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 40px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(200, 200, 200, 0.9);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -56,12 +56,12 @@ body {
     justify-content: center;
     align-items: center; /* Aligning inputs to the center */
     width: 100%;
-    max-width: 400px; 
+    max-width: 600px; 
 }
 
 .register-form form div {
     width: 100%;
-    max-width: 400px; /* Increase max width */
+    max-width: 400px;
     align-items: center;
 }
 
@@ -120,6 +120,32 @@ body {
     color: #aaa;
     pointer-events: none;
 }
+
+.form-section form, 
+.register-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; 
+}
+
+/* Styling for inputs and buttons */
+.form-section input, 
+.register-form input, 
+.form-section button, 
+.register-form button {
+
+    width: 100%;  /* Ensures the input fills the available width */
+    max-width: 600px;  /* Increases the maximum width of inputs */
+    padding: 12px 80px;  /* Adjusted padding for better width appearance */
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px; 
+    
+}
+
 
 .form-section button {
     width: 100%;
