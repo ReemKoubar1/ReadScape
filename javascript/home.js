@@ -66,3 +66,147 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
 
     this.reset();
 });
+
+document.addEventListener('DOMContentLoaded', async () => {
+    // 1. Test with better sample data
+    window.allProducts = [
+        {id: 1, title: "The Great Gatsby", author: "F. Scott Fitzgerald", image: "https://via.placeholder.com/40x60"},
+        {id: 2, title: "To Kill a Mockingbird", author: "Harper Lee", image: "https://via.placeholder.com/40x60"},
+        {id: 3, title: "1984", author: "George Orwell", image: "https://via.placeholder.com/40x60"},
+        {id: 4, title: "Pride and Prejudice", author: "Jane Austen", image: "https://via.placeholder.com/40x60"},
+        {id: 5, title: "The Hobbit", author: "J.R.R. Tolkien", image: "https://via.placeholder.com/40x60"},
+        {id: 6, title: "Harry Potter", author: "J.K. Rowling", image: "https://via.placeholder.com/40x60"}
+    ];
+
+    // 2. Get DOM elements
+    const searchInput = document.getElementById('search-input');
+    const searchDropdown = document.getElementById('search-dropdown');
+    let selectedIndex = -1;
+
+    // 3. Improved search function - FIXED THE SYNTAX ERROR HERE
+    function handleSearch() {
+        const term = searchInput.value.trim().toLowerCase();
+        if (term.length < 1) {
+            searchDropdown.style.display = 'none';
+            return;
+        }
+
+        const results = window.allProducts
+            .filter(product => 
+                product.title.toLowerCase().includes(term) || 
+                (product.author && product.author.toLowerCase().includes(term))
+            )
+            .sort((a, b) => {
+                // Sort by how close the match is to the beginning of the title
+                const aIndex = a.title.toLowerCase().indexOf(term);
+                const bIndex = b.title.toLowerCase().indexOf(term);
+                return aIndex - bIndex;
+            });
+
+        showResults(results);
+    }
+
+    function showResults(results) {
+        searchDropdown.innerHTML = '';
+        selectedIndex = -1;
+    
+        if (results.length === 0) {
+            searchDropdown.innerHTML = '<div class="search-dropdown-item">No results found</div>';
+            searchDropdown.style.display = 'block';
+            return;
+        }
+    
+        // Use only unique results
+        const uniqueResults = results.filter((product, index, self) =>
+            index === self.findIndex(p => p.id === product.id)
+        );
+    
+        uniqueResults.slice(0, 8).forEach((product, index) => {
+            const item = document.createElement('div');
+            item.className = 'search-dropdown-item';
+            item.innerHTML = `
+                <img src="${product.image}" alt="${product.title}" onerror="this.src='https://via.placeholder.com/40x60'">
+                <div class="info">
+                    <div class="title">${product.title}</div>
+                    <div class="author">${product.author || 'Unknown Author'}</div>
+                </div>
+            `;
+            item.addEventListener('click', () => {
+                selectItem(product);
+            });
+            searchDropdown.appendChild(item);
+        });
+        searchDropdown.style.display = 'block';
+
+        const searchBar = document.querySelector('.search-bar');
+        const searchBarRect = searchBar.getBoundingClientRect();
+        
+        searchDropdown.style.width = `${searchBarRect.width}px`;
+        searchDropdown.style.left = `${searchBarRect.left}px`;
+        searchDropdown.style.top = `${searchBarRect.bottom + window.scrollY + 5}px`;
+        
+        searchDropdown.style.display = 'block';
+    }
+
+
+    // 5. Highlight matching text
+    function highlightMatch(text, match) {
+        if (!match) return text;
+        const regex = new RegExp(`(${match})`, 'gi');
+        return text.replace(regex, '<span class="highlight">$1</span>');
+    }
+
+    // 6. Keyboard navigation
+    searchInput.addEventListener('keydown', (e) => {
+        const items = searchDropdown.querySelectorAll('.search-dropdown-item');
+        
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            selectedIndex = Math.min(selectedIndex + 1, items.length - 1);
+            updateSelection();
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            selectedIndex = Math.max(selectedIndex - 1, -1);
+            updateSelection();
+        } else if (e.key === 'Enter' && selectedIndex >= 0) {
+            e.preventDefault();
+            items[selectedIndex].click();
+        }
+    });
+
+    function updateSelection() {
+        const items = searchDropdown.querySelectorAll('.search-dropdown-item');
+        items.forEach((item, index) => {
+            item.classList.toggle('selected', index === selectedIndex);
+        });
+    }
+
+    // 7. Select item
+    function selectItem(product) {
+        searchInput.value = product.title;
+        searchDropdown.style.display = 'none';
+        // Here you can add what happens when item is selected
+        console.log("Selected:", product.title);
+        // window.location.href = `/product.html?id=${product.id}`;
+    }
+
+    // 8. Event listeners
+    searchInput.addEventListener('input', handleSearch);
+    searchInput.addEventListener('focus', () => {
+        if (searchInput.value.trim().length > 0) {
+            handleSearch();
+        }
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!searchInput.contains(e.target) && !searchDropdown.contains(e.target)) {
+            searchDropdown.style.display = 'none';
+        }
+    });
+
+    // Load your products as before
+    loadProducts('bestsellers', 'data/bestseller.json');
+    loadProducts('new-arrivals', 'data/new-arrival.json');
+    loadProducts('products', 'data/product.json');
+});

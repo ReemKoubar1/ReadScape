@@ -59,10 +59,14 @@
             <h1>Welcome to ReadScape</h1>
             <p>Discover a world of knowledge and imagination. Explore thousands of books, connect with authors, and find your next great read.</p>
 
-            <div class="search-bar">
-                <input type="text" placeholder="Search for books, authors...">
-                <button><i class="fas fa-search"></i> Search</button>
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search for books, authors..." autocomplete="off">
+                    <button id="search-button"><i class="fas fa-search"></i></button>
+                </div>
+                <div id="search-dropdown" class="search-dropdown"></div>
             </div>
+
         </div>
 
         <div class="right-hero">
@@ -72,7 +76,7 @@
 
     <section class="about-section">
         <div class="about-left">
-            <img src="images/about.png" alt="About Us Image">
+            <img src="images/openbook.jpg" alt="About Us Image">
         </div>
 
         <div class="about-right">
@@ -97,12 +101,7 @@
         <div class="product-container" id="bestsellers"></div>
     </section>
 
-    <section class="product-section">
-        <h2>New Arrivals</h2>
-        <div class="arrow left" onclick="scrollSection('new-arrivals', -1)">&#8592;</div>
-        <div class="arrow right" onclick="scrollSection('new-arrivals', 1)">&#8594;</div>
-        <div class="product-container" id="new-arrivals"></div>
-    </section>
+
 
     <section class="product-section">
         <h2>Products</h2>
@@ -138,17 +137,17 @@
         <h2>What Our Readers Say</h2>
         <div class="testimonial-container">
             <div class="testimonial-card">
-                <img src="images/user1.jpg" alt="User 1">
+                
                 <p>"ReadScape has transformed my reading experience! The selection is incredible."</p>
                 <h4>- Reem Koubar</h4>
             </div>
             <div class="testimonial-card">
-                <img src="images/user2.jpg" alt="User 2">
+                
                 <p>"I love how easy it is to find new books and connect with authors here."</p>
                 <h4>- Angy Chehade</h4>
             </div>
             <div class="testimonial-card">
-                <img src="images/user3.jpg" alt="User 3">
+               
                 <p>"The customer service is outstanding, and delivery is always on time."</p>
                 <h4>- Farah Ismail</h4>
             </div>
