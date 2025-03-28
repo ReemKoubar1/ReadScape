@@ -67,7 +67,7 @@ body {
 
 .register-form input {
     width: 100%; 
-    padding: 12px 40px;
+    padding: 12px 80px;
     font-size: 18px;
 }
 
@@ -131,14 +131,15 @@ body {
 }
 
 /* Styling for inputs and buttons */
+
+
 .form-section input, 
 .register-form input, 
 .form-section button, 
 .register-form button {
 
-    width: 100%;  /* Ensures the input fills the available width */
-    max-width: 600px;  /* Increases the maximum width of inputs */
-    padding: 12px 80px;  /* Adjusted padding for better width appearance */
+    width: 100%;  
+    padding: 12px 80px; 
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ddd;

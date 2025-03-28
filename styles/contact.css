@@ -6,10 +6,8 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 50px 20px;
-    background: linear-gradient(135deg, #ff6600, #ff9966);
+    background: linear-gradient(135deg, #ff6600, #f99c6e);
     color: white;
-    
-   
     overflow: hidden;
 }
 
@@ -25,7 +23,7 @@
 }
 
 .left-hero p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.8);
 }
@@ -42,18 +40,37 @@
 }
 
 /* Contact Form Section */
+
 .contact-form-section {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 50px 20px;
-    background-color: white;
+    color: black;
     margin: 20px auto;
-    
-   
     max-width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1; /* Ensure content stays on top */
+}
+
+/* Video Background */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place video behind the content */
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire section */
+    opacity: 0.5; /* Optional: adjust opacity to make content stand out more */
 }
 
 .contact-form-section:hover {
@@ -76,7 +93,12 @@
     display: block;
     font-size: 1rem;
     margin-bottom: 5px;
-    color: #555;
+    color:black;
+
+}
+
+.bold-text {
+    font-weight: bold;
 }
 
 .form-group input,
@@ -172,3 +194,75 @@
     flex-direction: column;
     align-items: center;
 }
+
+
+/* Popup container styles */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Centers the popup */
+    background: white;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+    width: 80%;
+    max-width: 500px;  /* Max width for the popup */
+    display: none;  /* Hidden by default */
+}
+
+/* Popup Content */
+.popup-content {
+    font-size: 1.2rem;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title */
+.popup-content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Message Paragraph */
+.popup-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* CTA Button inside the popup */
+.popup .cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px; /* Adding space below the button */
+}
+
+/* Close Button inside the Popup */
+.close-popup {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;  /* Space between message and close button */
+}
+
+/* Hover Effects */
+.cta-button:hover,
+.close-popup:hover {
+    opacity: 0.8;
+}
+
