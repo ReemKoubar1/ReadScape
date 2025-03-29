@@ -1,16 +1,34 @@
 
 .hero-section {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 100%;
     margin: 0 auto;
     padding: 50px 20px;
-    background: linear-gradient(135deg, #ff6600, #f99c6e);
     color: white;
     overflow: hidden;
+    height: 400px; /* Adjust height as needed */
 }
 
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire section */
+    z-index: -1; /* Places the image behind the text */
+    filter: brightness(0.7); /* Optional: Darkens the image for better text visibility */
+}
+
+.left-hero {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
 .left-hero {
     max-width: 50%;
     padding-right: 20px;
