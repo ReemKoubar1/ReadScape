@@ -68,22 +68,23 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
 });
 
 document.addEventListener('DOMContentLoaded', async () => {
-    // 1. Test with better sample data
-    window.allProducts = [
-        {id: 1, title: "The Great Gatsby", author: "F. Scott Fitzgerald", image: "https://via.placeholder.com/40x60"},
-        {id: 2, title: "To Kill a Mockingbird", author: "Harper Lee", image: "https://via.placeholder.com/40x60"},
-        {id: 3, title: "1984", author: "George Orwell", image: "https://via.placeholder.com/40x60"},
-        {id: 4, title: "Pride and Prejudice", author: "Jane Austen", image: "https://via.placeholder.com/40x60"},
-        {id: 5, title: "The Hobbit", author: "J.R.R. Tolkien", image: "https://via.placeholder.com/40x60"},
-        {id: 6, title: "Harry Potter", author: "J.K. Rowling", image: "https://via.placeholder.com/40x60"}
-    ];
+    // 1. fetch from json
+    try {
+        const response = await fetch('data/product.json'); 
+        if (!response.ok) {
+            throw new Error('Failed to load products.json');
+        }
+        window.allProducts = await response.json(); // Fetch products from the JSON file
+    } catch (error) {
+        console.error('Error loading products:', error);
+    }
 
     // 2. Get DOM elements
     const searchInput = document.getElementById('search-input');
     const searchDropdown = document.getElementById('search-dropdown');
     let selectedIndex = -1;
 
-    // 3. Improved search function - FIXED THE SYNTAX ERROR HERE
+    // 3. Improved search function
     function handleSearch() {
         const term = searchInput.value.trim().toLowerCase();
         if (term.length < 1) {
@@ -97,7 +98,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 (product.author && product.author.toLowerCase().includes(term))
             )
             .sort((a, b) => {
-                // Sort by how close the match is to the beginning of the title
                 const aIndex = a.title.toLowerCase().indexOf(term);
                 const bIndex = b.title.toLowerCase().indexOf(term);
                 return aIndex - bIndex;
@@ -115,8 +115,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             searchDropdown.style.display = 'block';
             return;
         }
-    
-        // Use only unique results
+
         const uniqueResults = results.filter((product, index, self) =>
             index === self.findIndex(p => p.id === product.id)
         );
@@ -147,7 +146,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         searchDropdown.style.display = 'block';
     }
-
 
     // 5. Highlight matching text
     function highlightMatch(text, match) {
@@ -185,9 +183,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     function selectItem(product) {
         searchInput.value = product.title;
         searchDropdown.style.display = 'none';
-        // Here you can add what happens when item is selected
         console.log("Selected:", product.title);
-        // window.location.href = `/product.html?id=${product.id}`;
+        //
     }
 
     // 8. Event listeners
@@ -204,8 +201,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             searchDropdown.style.display = 'none';
         }
     });
-
-    // Load your products as before
+    
+    // Ensure the loadProducts function is defined somewhere
     loadProducts('bestsellers', 'data/bestseller.json');
     loadProducts('new-arrivals', 'data/new-arrival.json');
     loadProducts('products', 'data/product.json');
