@@ -179,15 +179,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
 
-    // 7. Select item
-    function selectItem(product) {
-        searchInput.value = product.title;
-        searchDropdown.style.display = 'none';
-        console.log("Selected:", product.title);
-        //
-    }
+  
 
-    // 8. Event listeners
+    // 7. Event listeners
     searchInput.addEventListener('input', handleSearch);
     searchInput.addEventListener('focus', () => {
         if (searchInput.value.trim().length > 0) {
@@ -201,7 +195,23 @@ document.addEventListener('DOMContentLoaded', async () => {
             searchDropdown.style.display = 'none';
         }
     });
-    
+
+    // when we select item 
+    function selectItem(product) {
+        // Verify we have the right product data
+        console.log("Product data:", product);
+        
+        // Ensure we're saving all required fields
+        const bookData = {
+          title: product.title,
+          author: product.author,
+          image: product.image,
+          description: product.description || product.synopsis || ""
+        };
+        
+        localStorage.setItem('selectedBook', JSON.stringify(bookData));
+        window.location.href = 'book-details.html';
+      }
     // Ensure the loadProducts function is defined somewhere
     loadProducts('bestsellers', 'data/bestseller.json');
     loadProducts('new-arrivals', 'data/new-arrival.json');
