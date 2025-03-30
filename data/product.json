@@ -11,7 +11,7 @@
         "title": "1984",
         "price": "$9.99",
         "category": "Dystopian",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/1984first.jpg"
+        "image": "https://cdn.waterstones.com/bookjackets/large/9780/1410/9780141036144.jpg"
     },
     {
         "id": 3,
@@ -39,21 +39,21 @@
         "title": "Moby Dick",
         "price": "$13.99",
         "category": "Adventure",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Moby_Dick_p510_american.jpg"
+        "image": "https://m.media-amazon.com/images/I/610qaD5PskL.jpg"
     },
     {
         "id": 7,
         "title": "War and Peace",
         "price": "$15.99",
         "category": "Historical Fiction",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/War-and-peace-first-edition.jpg"
+        "image": "https://cdn.penguin.co.uk/dam-assets/books/9781448142675/9781448142675-jacket-large.jpg"
     },
     {
         "id": 8,
         "title": "Crime and Punishment",
         "price": "$10.99",
         "category": "Psychological Fiction",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Crime_and_Punishment_%281866%29.jpg"
+        "image": "https://m.media-amazon.com/images/I/41CsDeyZ3xL._AC_UF1000,1000_QL80_.jpg"
     },
     {
         "id": 9,
@@ -67,28 +67,28 @@
         "title": "Brave New World",
         "price": "$9.99",
         "category": "Science Fiction",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/BraveNewWorld_FirstEdition.jpg"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwtkrn8iXfitBLLBWvLt7VnijFVeKpHknkxw&s"
     },
     {
         "id": 11,
         "title": "The Picture of Dorian Gray",
         "price": "$10.99",
         "category": "Gothic Fiction",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/The_Picture_of_Dorian_Gray_1891.jpg"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzLQAWZXYYr1FMFdp6PVtdE-5RYFF7WnE8Qw&s"
     },
     {
         "id": 12,
         "title": "Jane Eyre",
         "price": "$11.99",
         "category": "Romance",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/0/03/Jane_Eyre_title_page.jpg"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSptZx67drW3d6qe5k8shYb6xjlGrrYr0u7vQ&s"
     },
     {
         "id": 13,
         "title": "The Odyssey",
         "price": "$12.99",
         "category": "Epic Poetry",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Odyssey1.jpg"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs4kQnfE8tKNHfBiQt0XNGjULoUd94jCH81g&s"
     },
     {
         "id": 14,
@@ -102,91 +102,91 @@
         "title": "Dracula",
         "price": "$10.99",
         "category": "Horror",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Dracula_1897_first_edition_cover.jpg"
+        "image": "https://cdn11.bigcommerce.com/s-aweq463/images/stencil/1280x1280/products/55297/139392/51a8qo7OsUL-_SL1000___00464.1726052617.jpg?c=2"
     },
     {
         "id": 16,
         "title": "The Adventures of Huckleberry Finn",
         "price": "$11.99",
         "category": "Adventure",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Huckleberry_Finn_book.jpg"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyZVJ8JG9C4-keObitcbdLUZq6R1Nm5K2cNg&s"
     },
     {
         "id": 17,
         "title": "Les Misérables",
         "price": "$13.99",
         "category": "Historical Fiction",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Les_Miserables_Cover_1862.jpg"
+        "image": "https://cdn.kobo.com/book-images/a6bdd3f5-ba60-4ad3-8f6b-5f1427021961/353/569/90/False/les-miserables-305.jpg"
     },
     {
         "id": 18,
         "title": "The Divine Comedy",
         "price": "$14.99",
         "category": "Epic Poetry",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Divina_Commedia_Laurenziana_Plut_40_1_inf-fol_94v.jpg"
+        "image": "https://notebookm.com/wp-content/uploads/2024/06/divine-comedy-cover.jpg"
     },
     {
         "id": 19,
         "title": "The Brothers Karamazov",
         "price": "$15.99",
         "category": "Philosophical Fiction",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Brothers_Karamazov_1880.jpg"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv3kZ3HrUXLSEARyx_POFNItHre4j33IiDdg&s"
     },
     {
         "id": 20,
         "title": "One Hundred Years of Solitude",
         "price": "$12.99",
         "category": "Magical Realism",
-        "image": "https://upload.wikimedia.org/wikipedia/en/6/6b/One_Hundred_Years_of_Solitude.jpg"
+        "image": "https://m.media-amazon.com/images/M/MV5BMjFjNTdiMmQtZjQ5Yi00MWMzLWJjMWMtNmI1ZTgzYmE5NjNiXkEyXkFqcGc@._V1_.jpg"
     },
     {
         "id": 21,
         "title": "The Lord of the Rings",
         "price": "$16.99",
         "category": "Fantasy",
-        "image": "https://upload.wikimedia.org/wikipedia/en/e/e9/First_Single_Volume_Edition_of_The_Lord_of_the_Rings.jpg"
+        "image": "https://i.harperapps.com/hcuk/covers/9780261103573/x400.jpg?ph=harperreach_coming_soon.png"
     },
     {
         "id": 22,
         "title": "Animal Farm",
         "price": "$9.99",
         "category": "Satire",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Animal_Farm_First_Edition.jpg"
+        "image": "https://m.media-amazon.com/images/I/71JUJ6pGoIL.jpg"
     },
     {
         "id": 23,
         "title": "The Alchemist",
         "price": "$10.99",
         "category": "Fiction",
-        "image": "https://upload.wikimedia.org/wikipedia/en/7/71/The_Alchemist_%28novel%29.jpg"
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1483412266i/865.jpg"
     },
     {
         "id": 24,
         "title": "The Road",
         "price": "$11.99",
         "category": "Post-Apocalyptic",
-        "image": "https://upload.wikimedia.org/wikipedia/en/1/12/The_Road_%28book%29.jpg"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyHIL_ZsQ0XrcwpTke87cjd3rWMI-h6TKB9Q&s"
     },
     {
         "id": 25,
         "title": "Life of Pi",
         "price": "$12.99",
         "category": "Adventure",
-        "image": "https://upload.wikimedia.org/wikipedia/en/4/4f/Life_of_Pi_cover.jpg"
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1631251689i/4214.jpg"
     },
     {
         "id": 26,
         "title": "The Book Thief",
         "price": "$13.99",
         "category": "Historical Fiction",
-        "image": "https://upload.wikimedia.org/wikipedia/en/8/87/The_Book_Thief_by_Markus_Zusak.png"
+        "image": "https://m.media-amazon.com/images/I/91ndEtx1uWL._AC_UF894,1000_QL80_.jpg"
     },
     {
         "id": 27,
         "title": "A Thousand Splendid Suns",
         "price": "$14.99",
         "category": "Historical Fiction",
-        "image": "https://upload.wikimedia.org/wikipedia/en/5/5a/A_Thousand_Splendid_Suns.jpg"
+        "image": "https://m.media-amazon.com/images/I/81O1dootJ8L._AC_UF894,1000_QL80_.jpg"
     },
     {
         "id": 28,
@@ -200,14 +200,14 @@
         "title": "Sapiens: A Brief History of Humankind",
         "price": "$16.99",
         "category": "Non-Fiction",
-        "image": "https://upload.wikimedia.org/wikipedia/en/5/5a/Sapiens_A_Brief_History_of_Humankind.jpg"
+        "image": "https://m.media-amazon.com/images/I/712Uo++xK2L._AC_UF1000,1000_QL80_.jpg"
     },
     {
         "id": 30,
         "title": "Educated",
         "price": "$17.99",
         "category": "Memoir",
-        "image": "https://upload.wikimedia.org/wikipedia/en/6/6e/Educated_Tara_Westover.jpg"
+        "image": "https://m.media-amazon.com/images/I/71-4MkLN5jL.jpg"
     },
 
 
