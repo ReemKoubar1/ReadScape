@@ -1,322 +1,92 @@
 [
-    {
-      "id": 1,
-      "title": "The Great Gatsby",
-      "price": "$10.99",
-      "category": "Classic",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg/220px-The_Great_Gatsby_Cover_1925_Retouched.jpg",
-      "description": "F. Scott Fitzgerald's masterpiece, a tragic love story set in the Roaring Twenties, exploring themes of wealth, illusion, and the American Dream."
-    },
-    {
-      "id": 2,
-      "title": "1984",
-      "price": "$9.99",
-      "category": "Dystopian",
-      "image": "https://cdn.waterstones.com/bookjackets/large/9780/1410/9780141036144.jpg",
-      "description": "George Orwell's chilling vision of a totalitarian future, where Big Brother watches your every move and thoughtcrime is the ultimate offense."
-    },
-    {
-      "id": 3,
-      "title": "To Kill a Mockingbird",
-      "price": "$12.99",
-      "category": "Fiction",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg",
-      "description": "Harper Lee's Pulitzer Prize-winning novel, a story of racial injustice and childhood innocence in the American South."
-    },
-    {
-      "id": 4,
-      "title": "Pride and Prejudice",
-      "price": "$8.99",
-      "category": "Romance",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/PrideAndPrejudiceTitlePage.jpg",
-      "description": "Jane Austen's classic tale of love and social class in 19th-century England, featuring the witty Elizabeth Bennet and the proud Mr. Darcy."
-    },
-    {
-      "id": 5,
-      "title": "The Catcher in the Rye",
-      "price": "$11.99",
-      "category": "Coming-of-Age",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/The_Catcher_in_the_Rye_%281951%2C_first_edition_cover%29.jpg",
-      "description": "J.D. Salinger's iconic novel about Holden Caulfield, a disillusioned teenager navigating the complexities of adolescence and phoniness."
-    },
-    {
-      "id": 6,
-      "title": "Moby Dick",
-      "price": "$13.99",
-      "category": "Adventure",
-      "image": "https://m.media-amazon.com/images/I/610qaD5PskL.jpg",
-      "description": "Herman Melville's epic tale of Captain Ahab's obsessive quest for the white whale, Moby Dick, a classic of American literature."
-    },
-    {
-      "id": 7,
-      "title": "War and Peace",
-      "price": "$15.99",
-      "category": "Historical Fiction",
-      "image": "https://cdn.penguin.co.uk/dam-assets/books/9781448142675/9781448142675-jacket-large.jpg",
-      "description": "Leo Tolstoy's sweeping saga of Russian society during the Napoleonic Wars, exploring themes of love, family, and the meaning of life."
-    },
-    {
-      "id": 8,
-      "title": "Crime and Punishment",
-      "price": "$10.99",
-      "category": "Psychological Fiction",
-      "image": "https://m.media-amazon.com/images/I/41CsDeyZ3xL._AC_UF1000,1000_QL80_.jpg",
-      "description": "Fyodor Dostoevsky's gripping exploration of guilt, redemption, and the human psyche, centered on the tormented Raskolnikov."
-    },
-    {
-      "id": 9,
-      "title": "The Hobbit",
-      "price": "$14.99",
-      "category": "Fantasy",
-      "image": "https://upload.wikimedia.org/wikipedia/en/4/4a/TheHobbit_FirstEdition.jpg",
-      "description": "J.R.R. Tolkien's beloved prequel to The Lord of the Rings, a charming tale of Bilbo Baggins's unexpected adventure."
-    },
-    {
-      "id": 10,
-      "title": "Brave New World",
-      "price": "$9.99",
-      "category": "Science Fiction",
-      "image": "httpshttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwtkrn8iXfitBLLBWvLt7VnijFVeKpHknkxw&s",
-      "description": "Aldous Huxley's dystopian masterpiece, a cautionary tale of a future society controlled by technology and pleasure."
-    },
-    {
-      "id": 11,
-      "title": "The Picture of Dorian Gray",
-      "price": "$10.99",
-      "category": "Gothic Fiction",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzLQAWZXYYr1FMFdp6PVtdE-5RYFF7WnE8Qw&s",
-      "description": "Oscar Wilde's haunting story of a man whose portrait ages while he remains eternally youthful, exploring themes of vanity and morality."
-    },
-    {
-      "id": 12,
-      "title": "Jane Eyre",
-      "price": "$11.99",
-      "category": "Romance",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSptZx67drW3d6qe5k8shYb6xjlGrrYr0u7vQ&s",
-      "description": "Charlotte Brontë's classic romance, a story of a governess's journey to independence and love."
-    },
-    {
-      "id": 13,
-      "title": "The Odyssey",
-      "price": "$12.99",
-      "category": "Epic Poetry",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs4kQnfE8tKNHfBiQt0XNGjULoUd94jCH81g&s",
-      "description": "Homer's epic poem, a tale of Odysseus's perilous journey home after the Trojan War."
-    },
-    {
-      "id": 14,
-      "title": "Frankenstein",
-      "price": "$9.99",
-      "category": "Horror",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Frankenstein_1818_edition_title_page.jpg",
-      "description": "Mary Shelley's gothic masterpiece, a story of a scientist who creates a monstrous creature and the consequences that follow."
-    },
-    {
-      "id": 15,
-      "title": "Dracula",
-      "price": "$10.99",
-      "category": "Horror",
-      "image": "https://cdn11.bigcommerce.com/s-aweq463/images/stencil/1280x1280/products/55297/139392/51a8qo7OsUL-_SL1000___00464.1726052617.jpg?c=2",
-      "description": "Bram Stoker's iconic vampire novel, a chilling tale of Count Dracula and his reign of terror."
-    },
-    {
-      "id": 16,
-      "title": "The Adventures of Huckleberry Finn",
-      "price": "$11.99",
-      "category": "Adventure",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyZVJ8JG9C4-keObitcbdLUZq6R1Nm5K2cNg&s",
-      "description": "Mark Twain's classic American novel, a story of a boy's journey down the Mississippi River and his friendship with a runaway slave."
-    },
-    {
-      "id": 17,
-      "title": "Les Misérables",
-      "price": "$13.99",
-      "category": "Historical Fiction",
-      "image": "https://cdn.kobo.com/book-images/a6bdd3f5-ba60-4ad3-8f6b-5f1427021961/353/569/90/False/les-miserables-305.jpg",
-      "description": "Victor Hugo's epic novel, a tale of redemption and social justice set against the backdrop of 19th-century France."
-    },
-    {
-      "id": 18,
-      "title": "The Divine Comedy",
-      "price": "$14.99",
-      "category": "Epic Poetry",
-      "image": "https://notebookm.com/wp-content/uploads/2024/06/divine-comedy-cover.jpg",
-      "description": "Dante Alighieri's epic poem, a journey through Hell, Purgatory, and Heaven."
-    },
-    {
-      "id": 19,
-      "title": "The Brothers Karamazov",
-      "price": "$15.99",
-      "category": "Philosophical Fiction",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv3kZ3HrUXLSEARyx_POFNItHre4j33IiDdg&s",
-      "description": "Fyodor Dostoevsky's complex and profound novel, exploring themes of faith, doubt, and the nature of good and evil."
-    },
-    {
-      "id": 20,
-      "title": "One Hundred Years of Solitude",
-      "price": "$12.99",
-      "category": "Magical Realism",
-      "image": "https://m.media-amazon.com/images/M/MV5BMjFjNTdiMmQtZjQ5Yi00MWMzLWJjMWMtNmI1ZTgzYmE5NjNiXkEyXkFqcGc@._V1_.jpg",
-      "description": "Gabriel García Márquez's masterpiece, a sprawling and magical tale of the Buendía family and the town of Macondo."
-    },
-    {
-      "id": 21,
-      "title": "The Lord of the Rings",
-      "price": "$16.99",
-      "category": "Fantasy",
-      "image": "https://i.harperapps.com/hcuk/covers/9780261103573/x400.jpg?ph=harperreach_coming_soon.png",
-      "description": "J.R.R. Tolkien's epic fantasy trilogy, a quest to destroy the One Ring and defeat the Dark Lord Sauron."
-    },
-    {
-      "id": 22,
-      "title": "Animal Farm",
-      "price": "$9.99",
-      "category": "Satire",
-      "image": "https://m.media-amazon.com/images/I/71JUJ6pGoIL.jpg",
-      "description": "George Orwell's allegorical novella, a satire of the Russian Revolution and the dangers of totalitarianism."
-    },
-    {
-      "id": 23,
-      "title": "The Alchemist",
-      "price": "$10.99",
-      "category": "Fiction",
-      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1483412266i/865.jpg",
-      "description": "Paulo Coelho's inspirational fable, a story of a shepherd boy's journey to discover his personal legend."
-    },
-    {
-      "id": 24,
-      "title": "The Road",
-      "price": "$11.99",
-      "category": "Post-Apocalyptic",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyHIL_ZsQ0XrcwpTke87cjd3rWMI-h6TKB9Q&s",
-      "description": "Cormac McCarthy's bleak and powerful novel, a post-apocalyptic journey of a father and son struggling to survive."
-    },
-    {
-      "id": 25,
-      "title": "Life of Pi",
-      "price": "$12.99",
-      "category": "Adventure",
-      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1631251689i/4214.jpg",
-      "description": "Yann Martel's magical and thought-provoking novel, a story of a boy and a tiger adrift at sea."
-    },
-    {
-      "id": 26,
-      "title": "The Book Thief",
-      "price": "$13.99",
-      "category": "Historical Fiction",
-      "image": "https://m.media-amazon.com/images/I/91ndEtx1uWL._AC_UF894,1000_QL80_.jpg",
-      "description": "Markus Zusak's moving and beautifully written novel, narrated by Death, about a young girl in Nazi Germany who finds solace in books."
-    },
-    {
-      "id": 27,
-      "title": "A Thousand Splendid Suns",
-      "price": "$14.99",
-      "category": "Historical Fiction",
-      "image": "https://m.media-amazon.com/images/I/81O1dootJ8L._AC_UF894,1000_QL80_.jpg",
-      "description": "Khaled Hosseini's poignant novel, a story of two women whose lives intertwine in war-torn Afghanistan."
-    },
-    {
-      "id": 28,
-      "title": "The Kite Runner",
-      "price": "$15.99",
-      "category": "Fiction",
-      "image": "https://upload.wikimedia.org/wikipedia/en/6/62/Kite_runner.jpg",
-      "description": "Khaled Hosseini's powerful and moving novel, a story of friendship, betrayal, and redemption set in Afghanistan."
-    },
-    {
-      "id": 29,
-      "title": "Sapiens: A Brief History of Humankind",
-      "price": "$16.99",
-      "category": "Non-Fiction",
-      "image": "https://m.media-amazon.com/images/I/712Uo++xK2L._AC_UF1000,1000_QL80_.jpg",
-      "description": "Yuval Noah Harari's sweeping and thought-provoking exploration of the history of humankind."
-    },
-    {
-      "id": 30,
-      "title": "Educated",
-      "price": "$17.99",
-      "category": "Memoir",
-      "image": "https://m.media-amazon.com/images/I/71-4MkLN5jL.jpg",
-      "description": "Tara Westover's inspiring memoir, a story of overcoming a restrictive upbringing and pursuing education."
-    },
-    {
-      "id": 51,
-      "title": "Harry Potter and the Philosopher's Stone",
-      "price": "$9.99",
-      "category": "Fantasy",
-      "image": "https://covers.openlibrary.org/b/isbn/9780747532743-L.jpg",
-      "description": "J.K. Rowling's magical start to the Harry Potter series, introducing the boy wizard and his adventures at Hogwarts."
-    },
-    {
-      "id": 52,
-      "title": "The Da Vinci Code",
-      "price": "$11.99",
-      "category": "Thriller",
-      "image": "https://covers.openlibrary.org/b/isbn/9780307474278-L.jpg",
-      "description": "Dan Brown's thrilling mystery, a race against time to unravel ancient secrets hidden in art and history."
-    },
-    {
-      "id": 53,
-      "title": "The Hunger Games",
-      "price": "$10.99",
-      "category": "Science Fiction",
-      "image": "https://covers.openlibrary.org/b/isbn/9780439023528-L.jpg",
-      "description": "Suzanne Collins's dystopian trilogy opener, a story of survival and rebellion in a televised death match."
-    },
-    {
-      "id": 54,
-      "title": "Twilight",
-      "price": "$8.99",
-      "category": "Romance",
-      "image": "https://covers.openlibrary.org/b/isbn/9780316015844-L.jpg",
-      "description": "Stephenie Meyer's supernatural romance, a tale of forbidden love between a human and a vampire."
-    },
-    {
-      "id": 55,
-      "title": "The Alchemist",
-      "price": "$10.99",
-      "category": "Fiction",
-      "image": "https://covers.openlibrary.org/b/isbn/9780062315007-L.jpg",
-      "description": "Paulo Coelho's inspirational fable, a story of a shepherd boy's journey to discover his personal legend."
-    },
-    {
-      "id": 56,
-      "title": "A Brief History of Time",
-      "price": "$12.99",
-      "category": "Non-Fiction",
-      "image": "https://covers.openlibrary.org/b/isbn/9780553380163-L.jpg",
-      "description": "Stephen Hawking's accessible exploration of the universe, from the Big Bang to black holes."
-    },
-    {
-      "id": 57,
-      "title": "The Girl with the Dragon Tattoo",
-      "price": "$13.99",
-      "category": "Mystery",
-      "image": "https://covers.openlibrary.org/b/isbn/9780307454546-L.jpg",
-      "description": "Stieg Larsson's gripping mystery thriller, a story of a journalist and a hacker investigating a decades-old disappearance."
-    },
-    {
-      "id": 58,
-      "title": "Gone Girl",
-      "price": "$11.99",
-      "category": "Thriller",
-      "image": "https://covers.openlibrary.org/b/isbn/9780307588371-L.jpg",
-      "description": "Gillian Flynn's psychological thriller, a dark and twisty tale of a marriage gone wrong."
-    },
-    {
-      "id": 59,
-      "title": "The Fault in Our Stars",
-      "price": "$10.99",
-      "category": "Romance",
-      "image": "https://covers.openlibrary.org/b/isbn/9780525478812-L.jpg",
-      "description": "John Green's poignant and heartfelt romance, a story of two teenagers with cancer who find love and meaning in life."
-    },
-    {
-      "id": 60,
-      "title": "Angels & Demons",
-      "price": "$11.99",
-      "category": "Thriller",
-      "image": "https://covers.openlibrary.org/b/isbn/9780743493468-L.jpg",
-      "description": "Dan Brown's suspenseful thriller, a race against time to prevent a deadly attack on the Vatican."
-    }
-  ]
+  {
+    "id": 1,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "price": "$10.99",
+    "category": "Classic",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg/220px-The_Great_Gatsby_Cover_1925_Retouched.jpg",
+    "description": "F. Scott Fitzgerald's masterpiece, a tragic love story set in the Roaring Twenties, exploring themes of wealth, illusion, and the American Dream."
+  },
+  {
+    "id": 2,
+    "title": "1984",
+    "author": "George Orwell",
+    "price": "$9.99",
+    "category": "Dystopian",
+    "image": "https://cdn.waterstones.com/bookjackets/large/9780/1410/9780141036144.jpg",
+    "description": "George Orwell's chilling vision of a totalitarian future, where Big Brother watches your every move and thoughtcrime is the ultimate offense."
+  },
+  {
+    "id": 3,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "price": "$12.99",
+    "category": "Fiction",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg",
+    "description": "Harper Lee's Pulitzer Prize-winning novel, a story of racial injustice and childhood innocence in the American South."
+  },
+  {
+    "id": 4,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "price": "$8.99",
+    "category": "Romance",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/PrideAndPrejudiceTitlePage.jpg",
+    "description": "Jane Austen's classic tale of love and social class in 19th-century England, featuring the witty Elizabeth Bennet and the proud Mr. Darcy."
+  },
+  {
+    "id": 5,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "price": "$11.99",
+    "category": "Coming-of-Age",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/The_Catcher_in_the_Rye_%281951%2C_first_edition_cover%29.jpg",
+    "description": "J.D. Salinger's iconic novel about Holden Caulfield, a disillusioned teenager navigating the complexities of adolescence and phoniness."
+  },
+  {
+    "id": 6,
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "price": "$13.99",
+    "category": "Adventure",
+    "image": "https://m.media-amazon.com/images/I/610qaD5PskL.jpg",
+    "description": "Herman Melville's epic tale of Captain Ahab's obsessive quest for the white whale, Moby Dick, a classic of American literature."
+  },
+  {
+    "id": 7,
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "price": "$15.99",
+    "category": "Historical Fiction",
+    "image": "https://cdn.penguin.co.uk/dam-assets/books/9781448142675/9781448142675-jacket-large.jpg",
+    "description": "Leo Tolstoy's sweeping saga of Russian society during the Napoleonic Wars, exploring themes of love, family, and the meaning of life."
+  },
+  {
+    "id": 8,
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "price": "$10.99",
+    "category": "Psychological Fiction",
+    "image": "https://m.media-amazon.com/images/I/41CsDeyZ3xL._AC_UF1000,1000_QL80_.jpg",
+    "description": "Fyodor Dostoevsky's gripping exploration of guilt, redemption, and the human psyche, centered on the tormented Raskolnikov."
+  },
+  {
+    "id": 9,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "price": "$14.99",
+    "category": "Fantasy",
+    "image": "https://upload.wikimedia.org/wikipedia/en/4/4a/TheHobbit_FirstEdition.jpg",
+    "description": "J.R.R. Tolkien's beloved prequel to The Lord of the Rings, a charming tale of Bilbo Baggins's unexpected adventure."
+  },
+  {
+    "id": 10,
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "price": "$9.99",
+    "category": "Science Fiction",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwtkrn8iXfitBLLBWvLt7VnijFVeKpHknkxw&s",
+    "description": "Aldous Huxley's dystopian masterpiece, a cautionary tale of a future society controlled by technology and pleasure."
+  }
+]

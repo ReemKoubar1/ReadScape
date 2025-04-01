@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "name": "J.K. Rowling",
+        "nationality": "British",
+        "birth_year": 1965,
+        "books": ["Harry Potter and the Sorcerer's Stone", "Harry Potter and the Chamber of Secrets"]
+    },
+    {
+        "id": 2,
+        "name": "George Orwell",
+        "nationality": "British",
+        "birth_year": 1903,
+        "books": ["1984", "Animal Farm"]
+    },
+    {
+        "id": 3,
+        "name": "Ernest Hemingway",
+        "nationality": "American",
+        "birth_year": 1899,
+        "books": ["The Old Man and the Sea", "A Farewell to Arms"]
+    },
+    {
+        "id": 4,
+        "name": "Jane Austen",
+        "nationality": "British",
+        "birth_year": 1775,
+        "books": ["Pride and Prejudice", "Sense and Sensibility"]
+    },
+    {
+        "id": 5,
+        "name": "Mark Twain",
+        "nationality": "American",
+        "birth_year": 1835,
+        "books": ["The Adventures of Tom Sawyer", "Adventures of Huckleberry Finn"]
+    },
+    {
+        "id": 6,
+        "name": "F. Scott Fitzgerald",
+        "nationality": "American",
+        "birth_year": 1896,
+        "books": ["The Great Gatsby", "Tender Is the Night"]
+    },
+    {
+        "id": 7,
+        "name": "Agatha Christie",
+        "nationality": "British",
+        "birth_year": 1890,
+        "books": ["Murder on the Orient Express", "And Then There Were None"]
+    },
+    {
+        "id": 8,
+        "name": "Leo Tolstoy",
+        "nationality": "Russian",
+        "birth_year": 1828,
+        "books": ["War and Peace", "Anna Karenina"]
+    },
+    {
+        "id": 9,
+        "name": "William Shakespeare",
+        "nationality": "British",
+        "birth_year": 1564,
+        "books": ["Hamlet", "Macbeth"]
+    },
+    {
+        "id": 10,
+        "name": "Charles Dickens",
+        "nationality": "British",
+        "birth_year": 1812,
+        "books": ["Great Expectations", "A Tale of Two Cities"]
+    },
+    {
+        "id": 11,
+        "name": "J.R.R. Tolkien",
+        "nationality": "British",
+        "birth_year": 1892,
+        "books": ["The Hobbit", "The Lord of the Rings"]
+    },
+    {
+        "id": 12,
+        "name": "Harper Lee",
+        "nationality": "American",
+        "birth_year": 1926,
+        "books": ["To Kill a Mockingbird"]
+    },
+    {
+        "id": 13,
+        "name": "Gabriel García Márquez",
+        "nationality": "Colombian",
+        "birth_year": 1927,
+        "books": ["One Hundred Years of Solitude", "Love in the Time of Cholera"]
+    },
+    {
+        "id": 14,
+        "name": "Herman Melville",
+        "nationality": "American",
+        "birth_year": 1819,
+        "books": ["Moby-Dick"]
+    },
+    {
+        "id": 15,
+        "name": "Fyodor Dostoevsky",
+        "nationality": "Russian",
+        "birth_year": 1821,
+        "books": ["Crime and Punishment", "The Brothers Karamazov"]
+    },
+    {
+        "id": 16,
+        "name": "Victor Hugo",
+        "nationality": "French",
+        "birth_year": 1802,
+        "books": ["Les Misérables", "The Hunchback of Notre-Dame"]
+    },
+    {
+        "id": 17,
+        "name": "Emily Brontë",
+        "nationality": "British",
+        "birth_year": 1818,
+        "books": ["Wuthering Heights"]
+    },
+    {
+        "id": 18,
+        "name": "Mary Shelley",
+        "nationality": "British",
+        "birth_year": 1797,
+        "books": ["Frankenstein"]
+    },
+    {
+        "id": 19,
+        "name": "Oscar Wilde",
+        "nationality": "Irish",
+        "birth_year": 1854,
+        "books": ["The Picture of Dorian Gray"]
+    },
+    {
+        "id": 20,
+        "name": "Franz Kafka",
+        "nationality": "Austrian",
+        "birth_year": 1883,
+        "books": ["The Metamorphosis", "The Trial"]
+    }
+]
