@@ -3,27 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Author Search</title>
+    <title>Author List</title>
     <link rel="stylesheet" href="styles/authors.css">
 </head>
 <body>
     <div class="container">
-        <input type="text" id="authorSearch" placeholder="Search authors" oninput="filterAuthors()" />
-        
-        <div id="authorList" class="author-container"></div>
-    
-        <!-- Tab for displaying books of the selected author -->
-        <div id="authorBooksTab" class="author-books-tab" style="display: none;">
-            <div id="authorBooksContent"></div>
+        <input type="text" id="authorSearch" placeholder="Search authors" />
+        <div id="authors" class="author-container"></div>
+        <div id="backArrowContainer" style="display: none;">
+            <span id="backArrow" class="back-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+            </span>
         </div>
     </div>
-
-    <span class="back-arrow" onclick="displayAuthors(authors)">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M15 18l-6-6 6-6"/>
-        </svg>
-    </span>
-    
     <script src="javascript/authors.js"></script>
 </body>
 </html>

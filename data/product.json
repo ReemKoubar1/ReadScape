@@ -89,4 +89,59 @@
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwtkrn8iXfitBLLBWvLt7VnijFVeKpHknkxw&s",
     "description": "Aldous Huxley's dystopian masterpiece, a cautionary tale of a future society controlled by technology and pleasure."
   }
+,
+    {
+    "id": 11,
+    "title": "في قلبي أنثى عبرية",
+    "author": "خولة حمدي",
+    "price": "$12.99",
+    "category": "Romance",
+    "image": "https://itihad.com.lb/wp-content/uploads/2020/12/9789776376441-1.jpg",
+    "description": "A touching story about love, religion, and identity, set in the context of the Israeli-Palestinian conflict."
+  },
+  {
+    "id": 12,
+    "title": "ألف شمس مشرقة",
+    "author": "خالد حسيني",
+    "price": "$13.99",
+    "category": "Historical Fiction",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1655336738i/128029.jpg",
+    "description": "A powerful narrative about two women in Afghanistan, their shared struggles, and their unbreakable bond in times of hardship."
+  },
+  {
+    "id": 13,
+    "title": "عمارة يعقوبيان",
+    "author": "علاء الأسواني",
+    "price": "$11.49",
+    "category": "Fiction",
+    "image": "https://www.neelwafurat.com/images/lb/abookstore/covers/normal/324/324381.jpg",
+    "description": "A vivid portrayal of modern-day Egypt, following the lives of the inhabitants of a building in Cairo and their intersecting lives."
+  },
+  {
+    "id": 14,
+    "title": "رأيت رام الله",
+    "author": "محمود درويش",
+    "price": "$14.49",
+    "category": "Memoir",
+    "image": "https://library.alistiqlal.edu.ps/cover/8743.jpg",
+    "description": "A poignant reflection on exile, homeland, and identity by the renowned Palestinian poet Mahmoud Darwish."
+  },
+  {
+    "id": 15,
+    "title": "القرآن الكريم",
+    "author": "Multiple Authors",
+    "price": "$19.99",
+    "category": "Islamic",
+    "image": "https://www.noor-book.com/publice/covers_cache_webp/2/6/e/a/a95b1f7ac66eab470634a25ba633add9.jpg.webp",
+    "description": "The holy book of Islam, believed to be the word of God as revealed to the Prophet Muhammad (PBUH)."
+  },
+  {
+    "id": 16,
+    "title": "رياض الصالحين",
+    "author": "الإمام النووي",
+    "price": "$8.99",
+    "category": "Islamic",
+    "image": "https://ketabpedia.com/wp-content/uploads/2020/07/bnr24825.png",
+    "description": "A collection of sayings and teachings of the Prophet Muhammad (PBUH), compiled by Imam al-Nawawi, offering moral guidance and wisdom."
+  }
 ]

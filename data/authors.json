@@ -4,139 +4,162 @@
         "name": "J.K. Rowling",
         "nationality": "British",
         "birth_year": 1965,
-        "books": ["Harry Potter and the Sorcerer's Stone", "Harry Potter and the Chamber of Secrets"]
+        "books": ["Harry Potter and the Sorcerer's Stone", "Harry Potter and the Chamber of Secrets"],
+        "image": "https://example.com/images/jk_rowling.jpg"
     },
     {
         "id": 2,
         "name": "George Orwell",
         "nationality": "British",
         "birth_year": 1903,
-        "books": ["1984", "Animal Farm"]
+        "books": ["1984", "Animal Farm"],
+        "image": "https://example.com/images/george_orwell.jpg"
     },
     {
         "id": 3,
         "name": "Ernest Hemingway",
         "nationality": "American",
         "birth_year": 1899,
-        "books": ["The Old Man and the Sea", "A Farewell to Arms"]
+        "books": ["The Old Man and the Sea", "A Farewell to Arms"],
+        "image": "https://example.com/images/ernest_hemingway.jpg"
     },
     {
         "id": 4,
         "name": "Jane Austen",
         "nationality": "British",
         "birth_year": 1775,
-        "books": ["Pride and Prejudice", "Sense and Sensibility"]
+        "books": ["Pride and Prejudice", "Sense and Sensibility"],
+        "image": "https://example.com/images/jane_austen.jpg"
     },
     {
         "id": 5,
         "name": "Mark Twain",
         "nationality": "American",
         "birth_year": 1835,
-        "books": ["The Adventures of Tom Sawyer", "Adventures of Huckleberry Finn"]
+        "books": ["The Adventures of Tom Sawyer", "Adventures of Huckleberry Finn"],
+        "image": "https://example.com/images/mark_twain.jpg"
     },
     {
         "id": 6,
         "name": "F. Scott Fitzgerald",
         "nationality": "American",
         "birth_year": 1896,
-        "books": ["The Great Gatsby", "Tender Is the Night"]
+        "books": ["The Great Gatsby", "Tender Is the Night"],
+        "image": "https://example.com/images/f_scott_fitzgerald.jpg"
     },
     {
         "id": 7,
         "name": "Agatha Christie",
         "nationality": "British",
         "birth_year": 1890,
-        "books": ["Murder on the Orient Express", "And Then There Were None"]
+        "books": ["Murder on the Orient Express", "And Then There Were None"],
+        "image": "https://example.com/images/agatha_christie.jpg"
     },
     {
         "id": 8,
         "name": "Leo Tolstoy",
         "nationality": "Russian",
         "birth_year": 1828,
-        "books": ["War and Peace", "Anna Karenina"]
+        "books": ["War and Peace", "Anna Karenina"],
+        "image": "https://example.com/images/leo_tolstoy.jpg"
     },
     {
         "id": 9,
         "name": "William Shakespeare",
         "nationality": "British",
         "birth_year": 1564,
-        "books": ["Hamlet", "Macbeth"]
+        "books": ["Hamlet", "Macbeth"],
+        "image": "https://example.com/images/william_shakespeare.jpg"
     },
     {
         "id": 10,
         "name": "Charles Dickens",
         "nationality": "British",
         "birth_year": 1812,
-        "books": ["Great Expectations", "A Tale of Two Cities"]
+        "books": ["Great Expectations", "A Tale of Two Cities"],
+        "image": "https://example.com/images/charles_dickens.jpg"
     },
     {
         "id": 11,
         "name": "J.R.R. Tolkien",
         "nationality": "British",
         "birth_year": 1892,
-        "books": ["The Hobbit", "The Lord of the Rings"]
+        "books": ["The Hobbit", "The Lord of the Rings"],
+        "image": "https://example.com/images/jrr_tolkien.jpg"
     },
     {
         "id": 12,
         "name": "Harper Lee",
         "nationality": "American",
         "birth_year": 1926,
-        "books": ["To Kill a Mockingbird"]
+        "books": ["To Kill a Mockingbird"],
+        "image": "https://example.com/images/harper_lee.jpg"
     },
     {
         "id": 13,
         "name": "Gabriel García Márquez",
         "nationality": "Colombian",
         "birth_year": 1927,
-        "books": ["One Hundred Years of Solitude", "Love in the Time of Cholera"]
+        "books": ["One Hundred Years of Solitude", "Love in the Time of Cholera"],
+        "image": "https://example.com/images/gabriel_garcia_marquez.jpg"
     },
     {
         "id": 14,
         "name": "Herman Melville",
         "nationality": "American",
         "birth_year": 1819,
-        "books": ["Moby-Dick"]
+        "books": ["Moby-Dick"],
+        "image": "https://example.com/images/herman_melville.jpg"
     },
     {
         "id": 15,
         "name": "Fyodor Dostoevsky",
         "nationality": "Russian",
         "birth_year": 1821,
-        "books": ["Crime and Punishment", "The Brothers Karamazov"]
+        "books": ["Crime and Punishment", "The Brothers Karamazov"],
+        "image": "https://example.com/images/fyodor_dostoevsky.jpg"
     },
     {
         "id": 16,
         "name": "Victor Hugo",
         "nationality": "French",
         "birth_year": 1802,
-        "books": ["Les Misérables", "The Hunchback of Notre-Dame"]
+        "books": ["Les Misérables", "The Hunchback of Notre-Dame"],
+        "image": "https://example.com/images/victor_hugo.jpg"
     },
     {
         "id": 17,
         "name": "Emily Brontë",
         "nationality": "British",
         "birth_year": 1818,
-        "books": ["Wuthering Heights"]
+        "books": ["Wuthering Heights"],
+        "image": "https://example.com/images/emily_bronte.jpg"
     },
     {
         "id": 18,
         "name": "Mary Shelley",
         "nationality": "British",
         "birth_year": 1797,
-        "books": ["Frankenstein"]
+        "books": ["Frankenstein"],
+        "image": "https://example.com/images/mary_shelley.jpg"
     },
     {
         "id": 19,
         "name": "Oscar Wilde",
         "nationality": "Irish",
         "birth_year": 1854,
-        "books": ["The Picture of Dorian Gray"]
+        "books": ["The Picture of Dorian Gray"],
+        "image": "https://example.com/images/oscar_wilde.jpg"
     },
     {
         "id": 20,
         "name": "Franz Kafka",
         "nationality": "Austrian",
         "birth_year": 1883,
-        "books": ["The Metamorphosis", "The Trial"]
+        "books": ["The Metamorphosis", "The Trial"],
+        "image": "https://example.com/images/franz_kafka.jpg"
     }
+
+   
 ]
+
