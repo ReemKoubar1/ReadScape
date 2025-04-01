@@ -143,5 +143,60 @@
     "category": "Islamic",
     "image": "https://ketabpedia.com/wp-content/uploads/2020/07/bnr24825.png",
     "description": "A collection of sayings and teachings of the Prophet Muhammad (PBUH), compiled by Imam al-Nawawi, offering moral guidance and wisdom."
-  }
+  },
+  
+    {
+      "id": 17,
+      "title": "النبي",
+      "author": "جبران خليل جبران",
+      "price": "$12.99",
+      "category": "أدب",
+      "image": "https://www.neelwafurat.com/images/lb/abookstore/covers/normal/197/197544.jpg",
+      "description": "كتاب فلسفي يتناول مواضيع الحياة من خلال سلسلة من الخطابات التي ألقاها النبي في مدينة أورفاليس. يتناول قضايا مثل الحب والعمل والموت."
+    },
+    {
+      "id": 18,
+      "title": "الأجنحة المتكسرة",
+      "author": "جبران خليل جبران",
+      "price": "$9.99",
+      "category": "رواية",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1340381789i/13637831.jpg",
+      "description": "رواية شعرية تتناول الحب والخيانة والفقدان، وتحكي قصة حب بين شاب وفتاة في عالم مليء بالصراعات الداخلية والخارجية."
+    },
+    {
+      "id":19,
+      "title": "المجنون",
+      "author": "جبران خليل جبران",
+      "price": "$7.99",
+      "category": "أدب",
+      "image": "https://kolalkotob.com/public/media/imgs/books/%D8%A7%D9%84%D9%85%D8%AC%D9%86%D9%88%D9%86%20-%20%D9%83%D8%AA%D8%A7%D8%A8%20-%20%D8%AC%D8%A8%D8%B1%D8%A7%D9%86%20%D8%AE%D9%84%D9%8A%D9%84%20%D8%AC%D8%A8%D8%B1%D8%A7%D9%86%20-%20%D9%85%D9%83%D8%AA%D8%A8%D8%A9%20%D9%83%D9%84%20%D8%A7%D9%84%D9%83%D8%AA%D8%A8",
+      "description": "مجموعة من الأقوال الفلسفية والرمزية التي تتناول التحديات الداخلية والوجودية للإنسان، بما في ذلك موضوعات مثل الحب والعزلة."
+    },
+    {
+      "id": 20,
+      "title": "دمعة وابتسامة",
+      "author": "جبران خليل جبران",
+      "price": "$10.99",
+      "category": "شعر",
+      "image": "https://education.hachette-antoine.com/wp-content/uploads/2019/02/cover-Damaa-wa-ibtisama.jpg",
+      "description": "مجموعة من القصائد التي تجمع بين الحزن والفرح، مما يعكس الصراع الداخلي في الحياة الإنسانية."
+    },
+    {
+      "id": 21,
+      "title": "رمل وزبد",
+      "author": "جبران خليل جبران",
+      "price": "$8.49",
+      "category": "أدب فلسفي",
+      "image": "https://m.media-amazon.com/images/I/81gvdxtnoEL._UF1000,1000_QL80_.jpg",
+      "description": "مجموعة من الأقوال والحكم التي تناقش الحياة والموت والوجود، بأسلوب شعري وفلسفي عميق."
+    },
+    {
+      "id": 22,
+      "title": "الباهرة",
+      "author": "إميل نصرالله",
+      "price": "$12.99",
+      "category": "رواية",
+      "image": "https://education.hachette-antoine.com/wp-content/uploads/2019/02/Cover-Bahira.jpg",
+      "description": "رواية تتناول قصة إنسانية تتخللها صراعات اجتماعية وثقافية، حيث تسلط الضوء على الفوارق الطبقية والتحديات الشخصية في إطار حيوي مليء بالرمزية. قصة تروي رحلات الأمل والهزيمة في وسط عالم مليء بالتوترات."
+    }
 ]

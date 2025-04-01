@@ -5,7 +5,48 @@
         "nationality": "British",
         "birth_year": 1965,
         "books": ["Harry Potter and the Sorcerer's Stone", "Harry Potter and the Chamber of Secrets"],
-        "image": "https://example.com/images/jk_rowling.jpg"
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQ34_td28Tz530qquzxaC9fMokUPbCU86aGMmVlOY_I-7zBXiBUGGp_lZoF06YuvBOBemFKzROjoijULV0P99pKWAKdnLjsdMqONHjug"
+    },
+    {
+        "id": 13,
+        "name": "خولة حمدي",
+        "nationality": "Tunisian",
+        "birth_year": 1984,
+        "books": ["في قلبي أنثى عبرية"],
+        "image": "https://books-library.com/files/books-library.com-07120200Ds0X1.jpg"
+      },
+
+
+      {
+        "id": 16,
+        "name": "محمود درويش",
+        "nationality": "Palestinian",
+        "birth_year": 1941,
+        "books": ["رأيت رام الله"],
+        "image": "https://erem-media-service.azurewebsites.net/api/ResizeImage?image=https%3A%2F%2Fcdn.foochia.com%2Fmedia%2Fe7abe91c-b690-41f6-8222-af951ad0ad73.webp&height=780&width=780&fit=cover"
+      },
+      {
+        "id": 5,
+        "name": "Mark Twain",
+        "nationality": "American",
+        "birth_year": 1835,
+        "books": ["The Adventures of Tom Sawyer", "Adventures of Huckleberry Finn"],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Mark_Twain_by_AF_Bradley.jpg"
+    },
+
+    {
+        "id": 16,
+        "name": "جبران خليل جبران",
+        "nationality": "لبناني",
+        "birth_year": 1883,
+        "books": [
+            "النبي",
+            "الأجنحة المتكسرة",
+            "المجنون",
+            "دمعة وابتسامة",
+            "رمل وزبد"
+        ],
+        "image": "https://www.aljazeera.net/wp-content/uploads/2024/01/d-1705474898.jpg?resize=1920%2C1280&quality=80"
     },
     {
         "id": 2,
@@ -13,15 +54,24 @@
         "nationality": "British",
         "birth_year": 1903,
         "books": ["1984", "Animal Farm"],
-        "image": "https://example.com/images/george_orwell.jpg"
+        "image": "https://hips.hearstapps.com/hmg-prod/images/george-orwell.jpg?crop=1xw:0.75xh;center,top&resize=1200:*"
     },
+
+    {
+        "id": 17,
+        "name": "إميل نصرالله",
+        "nationality": "لبناني",
+        "birth_year": 1941,
+        "books":    [ "الباهرة" ],
+        "image": "https://static.srpcdigital.com/styles/1037xauto/public/2018/09/04/1536068801706207200.jpg.webp"}
+   ,
     {
         "id": 3,
         "name": "Ernest Hemingway",
         "nationality": "American",
         "birth_year": 1899,
         "books": ["The Old Man and the Sea", "A Farewell to Arms"],
-        "image": "https://example.com/images/ernest_hemingway.jpg"
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2018/08/ernest_hemingway-1024x820.jpg"
     },
     {
         "id": 4,
@@ -29,23 +79,24 @@
         "nationality": "British",
         "birth_year": 1775,
         "books": ["Pride and Prejudice", "Sense and Sensibility"],
-        "image": "https://example.com/images/jane_austen.jpg"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyoIPawBe4km5iH9E3MLE4NjjRyLopnAg35Q&s"
     },
     {
-        "id": 5,
-        "name": "Mark Twain",
-        "nationality": "American",
-        "birth_year": 1835,
-        "books": ["The Adventures of Tom Sawyer", "Adventures of Huckleberry Finn"],
-        "image": "https://example.com/images/mark_twain.jpg"
-    },
+        "id": 14,
+        "name": "علاء الأسواني",
+        "nationality": "Egyptian",
+        "birth_year": 1957,
+        "books": ["عمارة يعقوبيان"],
+        "image": "https://static.dw.com/image/19282830_603.jpg"
+      },
+
     {
         "id": 6,
         "name": "F. Scott Fitzgerald",
         "nationality": "American",
         "birth_year": 1896,
         "books": ["The Great Gatsby", "Tender Is the Night"],
-        "image": "https://example.com/images/f_scott_fitzgerald.jpg"
+        "image": "https://m.media-amazon.com/images/M/MV5BNzhkYTNkNTktN2M5OS00MjU5LWFkMWQtZGEwOWIzZjcyY2NiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
     },
     {
         "id": 7,
@@ -53,7 +104,7 @@
         "nationality": "British",
         "birth_year": 1890,
         "books": ["Murder on the Orient Express", "And Then There Were None"],
-        "image": "https://example.com/images/agatha_christie.jpg"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzX3zlgjcBqquLS34K5YA49ndP0TS2MJn-Mw&s"
     },
     {
         "id": 8,
@@ -61,7 +112,7 @@
         "nationality": "Russian",
         "birth_year": 1828,
         "books": ["War and Peace", "Anna Karenina"],
-        "image": "https://example.com/images/leo_tolstoy.jpg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/L._N._Tolstoy%2C_by_Prokudin-Gorsky_%28cropped%29.jpg"
     },
     {
         "id": 9,
@@ -69,7 +120,7 @@
         "nationality": "British",
         "birth_year": 1564,
         "books": ["Hamlet", "Macbeth"],
-        "image": "https://example.com/images/william_shakespeare.jpg"
+        "image": "https://commshakes.org/wp-content/uploads/2017/12/william-shakespeare-194895-1-402-300x300.jpg"
     },
     {
         "id": 10,
@@ -77,7 +128,7 @@
         "nationality": "British",
         "birth_year": 1812,
         "books": ["Great Expectations", "A Tale of Two Cities"],
-        "image": "https://example.com/images/charles_dickens.jpg"
+        "image": "https://www.utoronto.ca/sites/default/files/picpath/charles-dickens.jpg"
     },
     {
         "id": 11,
@@ -85,7 +136,7 @@
         "nationality": "British",
         "birth_year": 1892,
         "books": ["The Hobbit", "The Lord of the Rings"],
-        "image": "https://example.com/images/jrr_tolkien.jpg"
+        "image": "https://cdn.britannica.com/65/66765-050-63A945A7/JRR-Tolkien.jpg"
     },
     {
         "id": 12,
@@ -93,73 +144,16 @@
         "nationality": "American",
         "birth_year": 1926,
         "books": ["To Kill a Mockingbird"],
-        "image": "https://example.com/images/harper_lee.jpg"
+        "image": "https://lambdaliterary.org/wp-content/uploads/2016/02/Harper-Lee.jpg"
     },
-    {
-        "id": 13,
-        "name": "Gabriel García Márquez",
-        "nationality": "Colombian",
-        "birth_year": 1927,
-        "books": ["One Hundred Years of Solitude", "Love in the Time of Cholera"],
-        "image": "https://example.com/images/gabriel_garcia_marquez.jpg"
-    },
-    {
-        "id": 14,
-        "name": "Herman Melville",
-        "nationality": "American",
-        "birth_year": 1819,
-        "books": ["Moby-Dick"],
-        "image": "https://example.com/images/herman_melville.jpg"
-    },
+    
     {
         "id": 15,
         "name": "Fyodor Dostoevsky",
         "nationality": "Russian",
         "birth_year": 1821,
         "books": ["Crime and Punishment", "The Brothers Karamazov"],
-        "image": "https://example.com/images/fyodor_dostoevsky.jpg"
-    },
-    {
-        "id": 16,
-        "name": "Victor Hugo",
-        "nationality": "French",
-        "birth_year": 1802,
-        "books": ["Les Misérables", "The Hunchback of Notre-Dame"],
-        "image": "https://example.com/images/victor_hugo.jpg"
-    },
-    {
-        "id": 17,
-        "name": "Emily Brontë",
-        "nationality": "British",
-        "birth_year": 1818,
-        "books": ["Wuthering Heights"],
-        "image": "https://example.com/images/emily_bronte.jpg"
-    },
-    {
-        "id": 18,
-        "name": "Mary Shelley",
-        "nationality": "British",
-        "birth_year": 1797,
-        "books": ["Frankenstein"],
-        "image": "https://example.com/images/mary_shelley.jpg"
-    },
-    {
-        "id": 19,
-        "name": "Oscar Wilde",
-        "nationality": "Irish",
-        "birth_year": 1854,
-        "books": ["The Picture of Dorian Gray"],
-        "image": "https://example.com/images/oscar_wilde.jpg"
-    },
-    {
-        "id": 20,
-        "name": "Franz Kafka",
-        "nationality": "Austrian",
-        "birth_year": 1883,
-        "books": ["The Metamorphosis", "The Trial"],
-        "image": "https://example.com/images/franz_kafka.jpg"
+        "image": "https://www.thoughtco.com/thmb/m1OBwm7kZ3wx6GKKOJubQLtOrzw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-961442608-68a9f6aaa0ef455890f2a95b4357941c.jpg"
     }
-
-   
 ]
 
