@@ -198,5 +198,41 @@
       "category": "رواية",
       "image": "https://education.hachette-antoine.com/wp-content/uploads/2019/02/Cover-Bahira.jpg",
       "description": "رواية تتناول قصة إنسانية تتخللها صراعات اجتماعية وثقافية، حيث تسلط الضوء على الفوارق الطبقية والتحديات الشخصية في إطار حيوي مليء بالرمزية. قصة تروي رحلات الأمل والهزيمة في وسط عالم مليء بالتوترات."
-    }
+    },
+    {
+      "id": 23,
+      "title": "الطريق إلى القرآن",
+      "author": "إبراهيم السكران",
+      "price": "$10.99",
+      "category": "إسلامي",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcm6-g1xp9l0oWIo_4TOO3O10KMRvs9IUMeQ&s",
+      "description": "كتاب يتحدث عن التأمل في معاني القرآن الكريم وكيفية استشعاره في حياتنا اليومية، بأسلوب عميق ومؤثر."
+  },
+  {
+      "id": 24,
+      "title": "الرحيق المختوم",
+      "author": "صفي الرحمن المباركفوري",
+      "price": "$14.50",
+      "category": "سيرة نبوية",
+      "image": "https://www.neelwafurat.com/images/lb/abookstore/covers/carton/124/124328.jpg",
+      "description": "كتاب يتناول سيرة النبي محمد ﷺ بطريقة تحليلية شاملة، ويعد أحد أهم الكتب في السيرة النبوية."
+  },
+  {
+      "id": 25,
+      "title": "في ظلال القرآن",
+      "author": "سيد قطب",
+      "price": "$19.99",
+      "category": "تفسير",
+      "image": "https://alfagrbookstore.com/image/cache/catalog/products/777/image20210912110139_10-1000x1000.jpg",
+      "description": "تفسير تحليلي للقرآن الكريم بأسلوب أدبي مميز يربط بين المعاني القرآنية والواقع المعاصر."
+  },
+  {
+      "id": 26,
+      "title": "البداية والنهاية",
+      "author": "ابن كثير",
+      "price": "$29.99",
+      "category": "تاريخ إسلامي",
+      "image": "https://www.noor-book.com/publice/covers_cache_webp/9/e/b/d/56d83b9aebebdc2d6ea25e97f7b6f521.png.webp",
+      "description": "موسوعة تاريخية إسلامية تسرد أحداث بدء الخلق حتى العصر الإسلامي، مع التركيز على الأنبياء والفتوحات."
+  }
 ]
