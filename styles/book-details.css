@@ -50,7 +50,6 @@
 }
 
 .category {
-    background: #3498db;
     color: white;
     padding: 0.3rem 1rem;
     border-radius: 20px;
@@ -86,14 +85,6 @@
     font-weight: bold;
     font-size: 1.2rem;
     margin-right: 15px;
-}
-
-.category {
-    background: #3498db;
-    color: white;
-    padding: 3px 10px;
-    border-radius: 12px;
-    font-size: 0.9rem;
 }
 
 .meta-info {

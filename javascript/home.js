@@ -206,7 +206,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           title: product.title,
           author: product.author,
           image: product.image,
-          description: product.description || product.synopsis || ""
+          description: product.description || product.synopsis || "",
+          price: product.price
         };
         
         localStorage.setItem('selectedBook', JSON.stringify(bookData));

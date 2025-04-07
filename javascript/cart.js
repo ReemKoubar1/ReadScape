@@ -1,85 +1,61 @@
-// New file: cart.js
-document.addEventListener('DOMContentLoaded', function() {
-    const cartItemsContainer = document.querySelector('.cart-items-container');
-    const subtotalElement = document.querySelector('.subtotal');
-    const totalElement = document.querySelector('.total-price');
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+window.onload = function() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartContainer = document.getElementById('cart-items');
 
-    function renderCart() {
-        cartItemsContainer.innerHTML = '';
-        
-        if (cart.length === 0) {
-            cartItemsContainer.innerHTML = '<p class="empty-cart">Your cart is empty</p>';
-            subtotalElement.textContent = '$0.00';
-            totalElement.textContent = '$0.00';
-            return;
-        }
-
-        let subtotal = 0;
-        
+    if (cart.length === 0) {
+        cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+    } else {
         cart.forEach(item => {
-            const itemElement = document.createElement('div');
-            itemElement.className = 'cart-item';
-            itemElement.innerHTML = `
-                <img src="${item.image}" alt="${item.title}">
-                <div class="item-details">
+            const cartItem = document.createElement('div');
+            cartItem.classList.add('cart-item');
+            cartItem.innerHTML = `
+                <img src="${item.image}" alt="${item.title}" class="cart-item-image">
+                <div class="cart-item-details">
                     <h3>${item.title}</h3>
-                    <p>$${item.price.toFixed(2)}</p>
+                    <p>Price: $${item.price.toFixed(2)}</p>
+                    <p>Category: ${item.category}</p>
+                    <p>Description: ${item.description}</p>
+                    <button class="remove-item" data-id="${item.id}">Remove</button>
                 </div>
-                <div class="item-actions">
-                    <button class="quantity-btn minus" data-id="${item.id}">-</button>
+                <div class="quantity">
+                    <button class="decrease" data-id="${item.id}">-</button>
                     <span>${item.quantity}</span>
-                    <button class="quantity-btn plus" data-id="${item.id}">+</button>
-                    <button class="remove-btn" data-id="${item.id}">
-                        <i class="fas fa-trash"></i>
-                    </button>
+                    <button class="increase" data-id="${item.id}">+</button>
                 </div>
             `;
-            
-            cartItemsContainer.appendChild(itemElement);
-            subtotal += item.price * item.quantity;
+            cartContainer.appendChild(cartItem);
         });
 
-        subtotalElement.textContent = `$${subtotal.toFixed(2)}`;
-        totalElement.textContent = `$${subtotal.toFixed(2)}`;
+        // Handling quantity change
+        document.querySelectorAll('.increase').forEach(button => {
+            button.addEventListener('click', () => updateQuantity(button.dataset.id, 1));
+        });
+
+        document.querySelectorAll('.decrease').forEach(button => {
+            button.addEventListener('click', () => updateQuantity(button.dataset.id, -1));
+        });
+
+        // Remove item from cart
+        document.querySelectorAll('.remove-item').forEach(button => {
+            button.addEventListener('click', () => removeItem(button.dataset.id));
+        });
     }
+};
 
-    // Handle quantity changes
-    document.addEventListener('click', function(e) {
-        const id = parseInt(e.target.dataset.id);
-        
-        if (e.target.classList.contains('minus')) {
-            updateQuantity(id, -1);
-        } else if (e.target.classList.contains('plus')) {
-            updateQuantity(id, 1);
-        } else if (e.target.classList.contains('remove-btn') || e.target.closest('.remove-btn')) {
-            removeItem(id);
-        }
-    });
-
-    function updateQuantity(id, change) {
-        const item = cart.find(item => item.id === id);
-        if (item) {
-            item.quantity += change;
-            
-            if (item.quantity <= 0) {
-                cart = cart.filter(item => item.id !== id);
-            }
-            
-            saveCart();
-        }
-    }
-
-    function removeItem(id) {
-        cart = cart.filter(item => item.id !== id);
-        saveCart();
-    }
-
-    function saveCart() {
+function updateQuantity(itemId, change) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const item = cart.find(i => i.id == itemId);
+    if (item) {
+        item.quantity += change;
+        if (item.quantity < 1) item.quantity = 1; // Prevent negative quantity
         localStorage.setItem('cart', JSON.stringify(cart));
-        renderCart();
+        location.reload(); // Reload to reflect changes
     }
+}
 
-    // Initialize
-    renderCart();
-});
+function removeItem(itemId) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart = cart.filter(i => i.id != itemId); // Remove item by ID
+    localStorage.setItem('cart', JSON.stringify(cart));
+    location.reload(); // Reload to reflect changes
+}
