@@ -233,6 +233,28 @@ body {
         left: 0;
     }
 
+    /* Popup styles */
+.popup-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    z-index: 1000;
+    display: none; /* Hide by default */
+    text-align: center;
+}
+
+/* Make the popup visible */
+.popup-message.show {
+    display: block;
+}
+
+
     
 }
 
