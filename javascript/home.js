@@ -1,3 +1,19 @@
+function selectItem(product) {
+    // Verify we have the right product data
+    console.log("Product data:", product);
+    
+    // Ensure we're saving all required fields
+    const bookData = {
+      title: product.title,
+      author: product.author,
+      image: product.image,
+      description: product.description || product.synopsis || "",
+      price: product.price
+    };
+    
+    localStorage.setItem('selectedBook', JSON.stringify(bookData));
+    window.location.href = 'book-details.html';
+  }
 async function loadProducts(sectionId, jsonFile) {
     const container = document.getElementById(sectionId);
     try {
@@ -20,12 +36,34 @@ async function loadProducts(sectionId, jsonFile) {
                 </div>
             `;
 
+            // Add to cart button functionality
+            card.querySelector('.add-to-cart').addEventListener('click', () => {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+                // Optional: avoid duplicate entries
+                if (!cart.find(item => item.title === product.title)) {
+                    cart.push({...product,quantity:1});
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    alert(`${product.title} added to cart`);
+                } else {
+                    alert(`${product.title} is already in the cart`);
+                }
+
+                // Update badge count
+                const badge = document.getElementById("badge");
+                if (badge) badge.textContent = cart.length;
+            });
+            card.querySelector('.view').addEventListener('click', () => {
+                selectItem(product)
+            });
+            
             container.appendChild(card);
         });
     } catch (error) {
         console.error(`Error loading ${jsonFile}:`, error);
     }
 }
+
 
 function scrollSection(sectionId, direction) {
     const container = document.getElementById(sectionId);
@@ -40,6 +78,22 @@ document.addEventListener('DOMContentLoaded', () => {
     loadProducts('bestsellers', 'data/bestseller.json');
     loadProducts('new-arrivals', 'data/new-arrival.json');
     loadProducts('products', 'data/product.json');
+document.getElementsByClassName("add-to-cart").forEach((addToCartButton)=>{
+addToCartButton.addEventListener('click', () => {
+    // Get current cart from localStorage
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Add current product
+    cart.push(product);
+
+    // Save updated cart back to localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    // Update badge count (optional)
+    document.getElementById("badge").textContent = cart.length;
+});
+}
+)
 });
 
 document.querySelectorAll('.faq-question').forEach(button => {
@@ -197,22 +251,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     // when we select item 
-    function selectItem(product) {
-        // Verify we have the right product data
-        console.log("Product data:", product);
-        
-        // Ensure we're saving all required fields
-        const bookData = {
-          title: product.title,
-          author: product.author,
-          image: product.image,
-          description: product.description || product.synopsis || "",
-          price: product.price
-        };
-        
-        localStorage.setItem('selectedBook', JSON.stringify(bookData));
-        window.location.href = 'book-details.html';
-      }
+
     // Ensure the loadProducts function is defined somewhere
     loadProducts('bestsellers', 'data/bestseller.json');
     loadProducts('new-arrivals', 'data/new-arrival.json');

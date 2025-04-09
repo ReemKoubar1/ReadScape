@@ -36,6 +36,22 @@ document.addEventListener("DOMContentLoaded", () => {
                         <p class="price">${product.price}</p>
                         <button class="add-to-cart">Add to Cart</button>
                     `;
+                    productCard.querySelector('.add-to-cart').addEventListener('click', () => {
+                        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+                        // Optional: avoid duplicate entries
+                        if (!cart.find(item => item.title === product.title)) {
+                            cart.push({...product,quantity:1});
+                            localStorage.setItem('cart', JSON.stringify(cart));
+                            alert(`${product.title} added to cart`);
+                        } else {
+                            alert(`${product.title} is already in the cart`);
+                        }
+        
+                        // Update badge count
+                        const badge = document.getElementById("badge");
+                        if (badge) badge.textContent = cart.length;
+                    });
                     productContainer.appendChild(productCard);
                 });
             }
@@ -57,3 +73,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+function selectItem(product) {
+    // Verify we have the right product data
+    console.log("Product data:", product);
+    
+    // Ensure we're saving all required fields
+    const bookData = {
+      title: product.title,
+      author: product.author,
+      image: product.image,
+      description: product.description || product.synopsis || "",
+      price: product.price
+    };
+        
+    localStorage.setItem('selectedBook', JSON.stringify(bookData));
+    window.location.href = 'book-details.html';
+}
