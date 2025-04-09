@@ -38,7 +38,6 @@ function scrollSection(sectionId, direction) {
 
 document.addEventListener('DOMContentLoaded', () => {
     loadProducts('bestsellers', 'data/bestseller.json');
-    loadProducts('new-arrivals', 'data/new-arrival.json');
     loadProducts('products', 'data/product.json');
 });
 
@@ -147,12 +146,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         searchDropdown.style.display = 'block';
     }
 
-    // 5. Highlight matching text
-    function highlightMatch(text, match) {
-        if (!match) return text;
-        const regex = new RegExp(`(${match})`, 'gi');
-        return text.replace(regex, '<span class="highlight">$1</span>');
-    }
+   
 
     // 6. Keyboard navigation
     searchInput.addEventListener('keydown', (e) => {
