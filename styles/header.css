@@ -90,7 +90,11 @@ header {
     cursor: pointer;
     color: #6a11cb;
 }
-
+.link a{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .links.desktop {
@@ -141,4 +145,9 @@ header {
     .desktop{
         display: none;
     }
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
 }
