@@ -1,25 +1,14 @@
-function switchForm(form) {
-    const authContainer = document.querySelector('.auth-container');
-    
-    if (form === 'register') {
-        authContainer.classList.add('register-active');
+// Function to switch between login and registration forms
+function switchForm(formType) {
+    const container = document.getElementById('authContainer');
+    if (formType === 'register') {
+        container.classList.add('register-active');
     } else {
-        authContainer.classList.remove('register-active');
+        container.classList.remove('register-active');
     }
 }
 
-// Initialize the user list (only once)
-const defaultUsers = [
-    { name: "Farah", email: "farah@gmail.com", password: "1234" },
-    { name: "Reem", email: "reem@gmail.com", password: "1234" },
-    { name: "Angy", email: "angy@gmail.com", password: "1234" }
-];
-
-if (!localStorage.getItem("users")) {
-    localStorage.setItem("users", JSON.stringify(defaultUsers));
-}
-
-// Handle login
+// Login functionality
 function loginUser(event) {
     event.preventDefault();
 
@@ -32,10 +21,89 @@ function loginUser(event) {
 
     if (user) {
         alert("Welcome, " + user.name + "!");
-        // Redirect or show dashboard here
+
+        document.getElementById("email").value = "";
+        document.getElementById("password").value = "";
     } else {
         alert("Invalid email or password.");
     }
 
     return false;
+}
+
+// Registration functionality
+function registerUser(event) {
+    event.preventDefault();
+
+    // Allowed users for registration
+    const allowedUsers = [
+        { name: "lynn Chahine", email: "lynn@gmail.com" },
+        { name: "alaa Saab", email: "alaa@gmail.com" },
+        { name: "adam Khatib", email: "adam@gmail.com" }
+    ];
+
+    const nameInput = document.getElementById("reg-name").value.trim().toLowerCase();
+    const emailInput = document.getElementById("reg-email").value.trim().toLowerCase();
+    const password = document.getElementById("reg-password").value;
+    const confirmPassword = document.getElementById("reg-confirm-password").value;
+
+    // Check if passwords match
+    if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return false;
+    }
+
+    // Check if the user is allowed to register
+    const matchedUser = allowedUsers.find(
+        user => user.name.toLowerCase() === nameInput && user.email.toLowerCase() === emailInput
+    );
+
+    if (!matchedUser) {
+        alert("Welcome to ReadScape");
+        return false;
+    }
+
+    // Get existing users from localStorage
+    let users = JSON.parse(localStorage.getItem("demoUsers")) || [];
+    if (users.find(user => user.name === nameInput)) {
+        alert("User already registered.");
+        return false;
+    }
+
+    // Check if the user limit is reached
+    if (users.length >= 3) {
+        alert("Maximum number of users already registered.");
+        return false;
+    }
+
+    // Add new user and save to localStorage
+    users.push({ name: nameInput, email: emailInput, password });
+    localStorage.setItem("demoUsers", JSON.stringify(users));
+
+    alert(`Welcome, ${nameInput.charAt(0).toUpperCase() + nameInput.slice(1)}! You've been registered.`);
+
+    // Clear the form fields after successful registration
+    document.getElementById("reg-name").value = "";
+    document.getElementById("reg-email").value = "";
+    document.getElementById("reg-password").value = "";
+    document.getElementById("reg-confirm-password").value = "";
+
+    // Switch to login form after clearing fields
+    if (typeof switchForm === 'function') {
+        switchForm('login');
+    }
+
+    return false;
+}
+
+// Default users (stored in localStorage if not present)
+const defaultUsers = [
+    { name: "Farah", email: "farah@gmail.com", password: "1234" },
+    { name: "Reem", email: "reem@gmail.com", password: "1234" },
+    { name: "Angy", email: "angy@gmail.com", password: "1234" }
+];
+
+// Store default users in localStorage if they aren't already there
+if (!localStorage.getItem("users")) {
+    localStorage.setItem("users", JSON.stringify(defaultUsers));
 }
