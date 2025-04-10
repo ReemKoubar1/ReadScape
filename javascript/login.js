@@ -31,11 +31,11 @@ function loginUser(event) {
     return false;
 }
 
-// Registration functionality
+
 function registerUser(event) {
     event.preventDefault();
 
-    // Allowed users for registration
+    
     const allowedUsers = [
         { name: "lynn Chahine", email: "lynn@gmail.com" },
         { name: "alaa Saab", email: "alaa@gmail.com" },
@@ -94,6 +94,13 @@ function registerUser(event) {
     }
 
     return false;
+
+ 
+}
+
+function clearDemoUsers() {
+    localStorage.removeItem("demoUsers");
+    alert("Demo users data has been cleared.");
 }
 
 // Default users (stored in localStorage if not present)
@@ -103,7 +110,7 @@ const defaultUsers = [
     { name: "Angy", email: "angy@gmail.com", password: "1234" }
 ];
 
-// Store default users in localStorage if they aren't already there
+
 if (!localStorage.getItem("users")) {
     localStorage.setItem("users", JSON.stringify(defaultUsers));
 }
