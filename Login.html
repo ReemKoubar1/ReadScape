@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login & Registration</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles/login.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login & Register</title>
+
+    
+
+   
+    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
 </head>
 <body>
     <header>
+    
         <div class="flex-header desktop">
             <div class="logo">
                 <img src="images/logo.png" alt="ReadScape Logo">
             </div>
 
             <ul class="links desktop">
-                <li class="link"><a href="/"><img src="icons/home.png" alt="" class="icon"> Home</a></li>
-                <li class="link"><a href="about.html"><img src="icons/info icon.png" alt="" class="icon"> About Us</a></li>
-                <li class="link"><a href="contact.html"><img src="icons/contact us.png" alt="" class="icon"> Contact Us</a></li>
-                <li class="link"><a href="shop.html"><img src="icons/shop.png" alt="" class="icon"> Shop</a></li>
-                <li class="link"><a href="authors.html"><img src="icons/authors.png" alt="" class="icon"> Authors</a></li>
+                <li class="link"><a href="/"><img src="icons/home.svg" alt="" class="icon"> Home</a></li>
+                <li class="link"><a href="about.html"><img src="icons/info.svg" alt="" class="icon"> About Us</a></li>
+                <li class="link"><a href="contact.html"><img src="icons/contact.svg" alt="" class="icon"> Contact Us</a></li>
+                <li class="link"><a href="shop.html"><img src="icons/shop.svg" alt="" class="icon"> Shop</a></li>
+                <li class="link"><a href="authors.html"><img src="icons/authors.svg" alt="" class="icon"> Authors</a></li>
             </ul>
 
             <div class="actions">
                 <div class="cart">
-                    <a href="cart.html"><img src="icons/cartt.png" alt="" class="icon"> <span class="badge">0</span></a>
+                    <a href="cart.html"><img src="icons/cart.svg" alt="" class="icon"> <span id="badge" class="badge">0</span></a>
                 </div>
                 <div class="login">
-                    <a href="login.html"><img src="icons/authors.png" alt="" class="icon"> Login</a>
+                    <a href="login.html"><img src="icons/authors.svg" alt="" class="icon"> Login</a>
                 </div>
             </div>
         </div>
@@ -54,105 +58,92 @@
             </ul>
         </div>
     </header>
-    <div class="auth-container">
-     
-        <div class="image-section right-image">
-           
-        </div>
-
+    <div class="auth-container" id="authContainer">
         <!-- Login Form -->
         <div class="form-section login-form">
             <h2><i class="fas fa-sign-in-alt"></i> Login</h2>
-            <form>
+            <form onsubmit="return loginUser(event)">
                 <div style="position: relative;">
                     <i class="fas fa-envelope input-icon"></i>
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" id="email" placeholder="Email" required />
                 </div>
                 <div style="position: relative;">
                     <i class="fas fa-lock input-icon"></i>
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" id="password" placeholder="Password" required />
                 </div>
                 <button type="submit"><i class="fas fa-arrow-right"></i> Login</button>
                 <p>Don't have an account? <a href="#" onclick="switchForm('register')">Register here</a></p>
             </form>
         </div>
+<!-- register-form -->
+<div class="form-section register-form">
+    <h2><i class="fas fa-user-plus"></i> Register</h2>
+    <form onsubmit="return registerUser(event)">
+        <div style="position: relative;">
+            <i class="fas fa-user input-icon"></i>
+            <input type="text" id="reg-name" placeholder="Full Name" required />
+        </div>
+        <div style="position: relative;">
+            <i class="fas fa-envelope input-icon"></i>
+            <input type="email" id="reg-email" placeholder="Email" required />
+        </div>
+        <div style="position: relative;">
+            <i class="fas fa-lock input-icon"></i>
+            <input type="password" id="reg-password" placeholder="Password" required />
+        </div>
+        <div style="position: relative;">
+            <i class="fas fa-lock input-icon"></i>
+            <input type="password" id="reg-confirm-password" placeholder="Confirm Password" required />
+        </div>
+        <button type="submit"><i class="fas fa-check"></i> Register</button>
+        <p>Already have an account? <a href="#" onclick="switchForm('login')">Login here</a></p>
+    </form>
+</div>
+    </div>
 
-        <!-- Registration Form -->
-        <div class="form-section register-form">
-            <h2><i class="fas fa-user-plus"></i> Register</h2>
-            <form>
-                <div style="position: relative;">
-                    <i class="fas fa-user input-icon"></i>
-                    <input type="text" placeholder="Full Name" required>
-                </div>
-                <div style="position: relative;">
-                    <i class="fas fa-envelope input-icon"></i>
-                    <input type="email" placeholder="Email" required>
-                </div>
-                <div style="position: relative;">
-                    <i class="fas fa-lock input-icon"></i>
-                    <input type="password" placeholder="Password" required>
-                </div>
-                <div style="position: relative;">
-                    <i class="fas fa-lock input-icon"></i>
-                    <input type="password" placeholder="Confirm Password" required>
-                </div>
-                <button type="submit"><i class="fas fa-check"></i> Register</button>
-                <p>Already have an account? <a href="#" onclick="switchForm('login')">Login here</a></p>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section logo-section">
+            <img src="images/logo.png" alt="ReadScape Logo" class="footer-logo">
+            <p>ReadScape is your gateway to a world of books, knowledge, and imagination.</p>
+        </div>
+
+        <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section social-media">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
             </form>
         </div>
     </div>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section logo-section">
-                <img src="images/logo.png" alt="ReadScape Logo" class="footer-logo">
-                <p>ReadScape is your gateway to a world of books, knowledge, and imagination.</p>
-            </div>
 
-            <div class="footer-section quick-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
+    <div class="copyright">
+        <p>&copy; 2025 ReadScape. All rights reserved.</p>
+    </div>
+</footer>
 
-            <div class="footer-section social-media">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-section newsletter">
-                <h3>Subscribe to Our Newsletter</h3>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-        </div>
-
-        <div class="copyright">
-            <p>&copy; 2025 ReadScape. All rights reserved.</p>
-        </div>
-    </footer>
+    <!-- External JS -->
     <script src="javascript/header.js"></script>
     <script src="javascript/login.js"></script>
-    <script>
-        function switchForm(formType) {
-            const authContainer = document.querySelector('.auth-container');
-            if (formType === 'register') {
-                authContainer.classList.add('register-active');
-            } else {
-                authContainer.classList.remove('register-active');
-            }
-        }
-    </script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 
   /* book-details.css */
-.book-container {
+  .book-container {
     display: flex;
     max-width: 1200px;
     margin: 2rem auto;
