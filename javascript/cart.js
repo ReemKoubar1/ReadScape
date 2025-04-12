@@ -1,76 +1,115 @@
-window.addEventListener('DOMContentLoaded', function () {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+window.addEventListener('DOMContentLoaded', async function () {
     const cartContainer = document.getElementById('cart-items');
     const totalPriceElement = document.getElementById('total-price');
-    let totalPrice = 0;
+    const badge = document.querySelector('.badge');
 
-    if (cart.length === 0) {
-        cartContainer.innerHTML = "<p>Your cart is empty.</p>";
-    } else {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let products = [];
+    try {
+        const [productsResponse, bestsellersResponse] = await Promise.all([
+            fetch('data/product.json'),
+            fetch('data/bestseller.json')
+        ]);
+
+        const productsData = await productsResponse.json();
+        const bestsellersData = await bestsellersResponse.json();
+
+        // Combine both arrays into one
+        products = [...productsData, ...bestsellersData];
+    } catch (error) {
+        console.error('Error fetching product data:', error);
+    }
+
+    function renderCart() {
+        cartContainer.innerHTML = '';
+        let totalPrice = 0;
+
+        if (cart.length === 0) {
+            cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+            totalPriceElement.textContent = '0.00';
+            updateBadge();
+            return;
+        }
+
         cart.forEach(item => {
-            // Convert string price "$10.00" to number 10.00
-            const numericPrice = parseFloat(item.price.replace('$', ''));
-            totalPrice += numericPrice * item.quantity;
+            const product = products.find(p => p.id == item.id);
+            if (!product) return;
+
+            const price = typeof product.price === 'string' ? parseFloat(product.price.replace('$', '')) : product.price;
+            totalPrice += price * item.quantity;
 
             const cartItem = document.createElement('div');
             cartItem.classList.add('cart-item');
+         
             cartItem.innerHTML = `
-                <img src="${item.image}" alt="${item.title}" class="cart-item-image">
+                <img src="${product.image}" alt="${product.title}" class="cart-item-image">
                 <div class="cart-item-details">
-                    <h3>${item.title}</h3>
-                    <p>Price: ${item.price}</p>
-                    <p>Category: ${item.category}</p>
-                    <p>Description: ${item.description}</p>
-                    <button class="remove-item" data-id="${item.id}">Remove</button>
+                    <h3>${product.title}</h3>
+                    <p>Price: $${price.toFixed(2)}</p>
+                    <p>Category: ${product.category}</p>
+                    <p>Description: ${product.description || "No description available."}</p>
+                    <button class="remove-item" data-id="${product.id}">Remove</button>
                 </div>
                 <div class="quantity">
-                    <button class="decrease" data-id="${item.id}">-</button>
+                    <button class="decrease" data-id="${product.id}">-</button>
                     <span>${item.quantity}</span>
-                    <button class="increase" data-id="${item.id}">+</button>
+                    <button class="increase" data-id="${product.id}">+</button>
                 </div>
             `;
+
             cartContainer.appendChild(cartItem);
         });
 
-        // Show total price
         totalPriceElement.textContent = totalPrice.toFixed(2);
-
-        // Quantity buttons
-        document.querySelectorAll('.increase').forEach(button => {
-            button.addEventListener('click', () => updateQuantity(button.dataset.id, 1));
-        });
-
-        document.querySelectorAll('.decrease').forEach(button => {
-            button.addEventListener('click', () => updateQuantity(button.dataset.id, -1));
-        });
-
-        // Remove buttons
-        document.querySelectorAll('.remove-item').forEach(button => {
-            button.addEventListener('click', () => removeItem(button.dataset.id));
-        });
+        updateBadge();
+        attachEventListeners();
     }
 
-    // Quantity update function
-    function updateQuantity(itemId, change) {
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        const item = cart.find(i => i.id == itemId);
-        if (item) {
-            item.quantity += change;
-            if (item.quantity < 1) item.quantity = 1;
-            localStorage.setItem('cart', JSON.stringify(cart));
-            location.reload();
+    function updateBadge() {
+        if (badge) {
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            badge.textContent = totalItems;
         }
     }
 
-    // Remove item
-    function removeItem(itemId) {
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        cart = cart.filter(i => i.id != itemId);
-        localStorage.setItem('cart', JSON.stringify(cart));
-        location.reload();
+    function attachEventListeners() {
+        document.querySelectorAll('.increase').forEach(button => {
+            button.addEventListener('click', () => {
+                const itemId = button.dataset.id;
+                const item = cart.find(i => i.id == itemId);
+                if (item) {
+                    item.quantity++;
+                    saveCart();
+                }
+            });
+        });
+
+        document.querySelectorAll('.decrease').forEach(button => {
+            button.addEventListener('click', () => {
+                const itemId = button.dataset.id;
+                const item = cart.find(i => i.id == itemId);
+                if (item && item.quantity > 1) {
+                    item.quantity--;
+                    saveCart();
+                }
+            });
+        });
+
+        document.querySelectorAll('.remove-item').forEach(button => {
+            button.addEventListener('click', () => {
+                const itemId = button.dataset.id;
+                cart = cart.filter(i => i.id != itemId);
+                saveCart();
+            });
+        });
     }
 
-    // Checkout form submission
+    function saveCart() {
+        localStorage.setItem('cart', JSON.stringify(cart));
+        renderCart();
+    }
+
+    // Checkout
     const checkoutForm = document.getElementById('checkout-form');
     if (checkoutForm) {
         checkoutForm.addEventListener('submit', function (e) {
@@ -85,9 +124,11 @@ window.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            alert(`Thank you for your purchase, ${name}!\nTotal: $${totalPrice.toFixed(2)}`);
+            alert(`Thank you for your purchase, ${name}!\nTotal: $${totalPriceElement.textContent}`);
             localStorage.removeItem('cart');
-            window.location.href = 'thankyou.html'; // Or use location.reload();
+            window.location.href = 'thankyou.html';
         });
     }
+
+    renderCart();
 });

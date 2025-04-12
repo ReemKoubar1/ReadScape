@@ -12,7 +12,7 @@ body {
 .auth-container {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
@@ -26,30 +26,6 @@ body {
     width: 100%;
 }
 
-.form-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    background: rgba(200, 200, 200, 0.9);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    transition: transform 0.5s ease-in-out;
-}
-
-.login-form {
-    order: 2;
-    left: 50%;
-    transform: translateX(-50%);
-    flex: 0 0 auto;
-    max-width: 500px;
-    width: 100%;
-    position: absolute;
-}
-
 .register-form form {
     display: flex;
     flex-direction: column;
@@ -60,7 +36,7 @@ body {
 }
 
 .register-form form div {
-    width: 100%;
+    /* width: 100%; */
     max-width: 400px;
     align-items: center;
 }
@@ -138,18 +114,22 @@ body {
 .form-section button, 
 .register-form button {
 
-    width: 100%;  
-    padding: 12px 80px; 
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    margin-bottom: 15px; 
-    
+/* width: 100%; */
+
+padding: 12px 80px;
+
+font-size: 16px;
+
+border-radius: 5px;
+
+border: 1px solid #ddd;
+
+margin-bottom: 15px;
 }
 
 
 .form-section button {
-    width: 100%;
+    /* width: 100%; */
     padding: 12px;
     font-size: 16px;
     font-weight: bold;
@@ -197,6 +177,7 @@ body {
 }
 
 .auth-container.register-active .login-form {
+    position: absolute;
     left: -100%;
 }
 
@@ -235,3 +216,131 @@ body {
     
 }
 
+
+
+.auth-container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 30px;
+    border: 2px solid #ffa500;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 6px 20px rgba(255, 165, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ===============================
+     Form Header Style
+  =============================== */
+  .form-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ff7b00;
+    font-size: 24px;
+  }
+  
+  /* ===============================
+     Form Element Styling
+  =============================== */
+  .form-section form {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    align-items: center;
+  }
+  
+  .form-section form div {
+    position: relative;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffa500;
+    font-size: 18px;
+  }
+  
+  /* Input Field Style */
+  .form-section input[type="email"],
+  .form-section input[type="password"],
+  .form-section input[type="text"] {
+    width: 100%;
+    padding: 12px 12px 12px 40px;  /* Space on the left for icon */
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-section input:focus {
+    outline: none;
+    border-color: #ffa500;
+  }
+  
+  /* ===============================
+     Button Styles
+  =============================== */
+  .form-section button[type="submit"] {
+    background-color: #ff7b00;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-section button[type="submit"]:hover {
+    background-color: #e86e00;
+  }
+  
+  /* ===============================
+     Auxiliary Text & Links
+  =============================== */
+  .form-section p {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .form-section p a {
+    color: #ff7b00;
+    font-weight: bold;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+  }
+  
+  .form-section p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ===============================
+     Responsive Considerations
+  =============================== */
+  @media (max-width: 576px) {
+    .auth-container {
+      margin: 50px 20px;
+      padding: 20px;
+    }
+    
+    .form-section h2 {
+      font-size: 20px;
+    }
+    
+    .form-section input[type="email"],
+    .form-section input[type="password"],
+    .form-section input[type="text"] {
+      padding: 10px 10px 10px 35px;
+    }
+    
+    .form-section button[type="submit"] {
+      font-size: 14px;
+      padding: 10px;
+    }
+}
+.register-form{
+    flex-direction: column;
+    align-items: center;
+}

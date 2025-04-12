@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Login & Register</title>
 
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+    
 
    
     <link rel="stylesheet" href="styles/login.css" />
@@ -14,7 +13,51 @@
     <link rel="stylesheet" href="styles/footer.css" />
 </head>
 <body>
-   
+    <header>
+    
+        <div class="flex-header desktop">
+            <div class="logo">
+                <img src="images/logo.png" alt="ReadScape Logo">
+            </div>
+
+            <ul class="links desktop">
+                <li class="link"><a href="/"><img src="icons/home.svg" alt="" class="icon"> Home</a></li>
+                <li class="link"><a href="about.html"><img src="icons/info.svg" alt="" class="icon"> About Us</a></li>
+                <li class="link"><a href="contact.html"><img src="icons/contact.svg" alt="" class="icon"> Contact Us</a></li>
+                <li class="link"><a href="shop.html"><img src="icons/shop.svg" alt="" class="icon"> Shop</a></li>
+                <li class="link"><a href="authors.html"><img src="icons/authors.svg" alt="" class="icon"> Authors</a></li>
+            </ul>
+
+            <div class="actions">
+                <div class="cart">
+                    <a href="cart.html"><img src="icons/cart.svg" alt="" class="icon"> <span id="badge" class="badge">0</span></a>
+                </div>
+                <div class="login">
+                    <a href="login.html"><img src="icons/authors.svg" alt="" class="icon"> Login</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile">
+            <div class="flex-header">
+                <div class="logo">
+                    <img src="images/logo.png" alt="ReadScape Logo">
+                </div>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <ul class="links">
+                <li class="link"><a href="/"><i class="fas fa-home"></i> Home</a></li>
+                <li class="link"><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li class="link"><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                <li class="link"><a href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+                <li class="link"><a href="authors.html"><i class="fas fa-users"></i> Authors</a></li>
+                <li class="link"><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
+                <li class="link"><a href="cart.html"><i class="fas fa-shopping-cart"></i> My Cart</a></li>
+            </ul>
+        </div>
+    </header>
     <div class="auth-container" id="authContainer">
         <!-- Login Form -->
         <div class="form-section login-form">
@@ -56,11 +99,48 @@
         <p>Already have an account? <a href="#" onclick="switchForm('login')">Login here</a></p>
     </form>
 </div>
+    </div>
 
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section logo-section">
+            <img src="images/logo.png" alt="ReadScape Logo" class="footer-logo">
+            <p>ReadScape is your gateway to a world of books, knowledge, and imagination.</p>
+        </div>
 
-    <footer>
-        <!-- Your footer content -->
-    </footer>
+        <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section social-media">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2025 ReadScape. All rights reserved.</p>
+    </div>
+</footer>
 
     <!-- External JS -->
     <script src="javascript/header.js"></script>

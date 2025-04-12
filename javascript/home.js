@@ -4,6 +4,7 @@ function selectItem(product) {
     
     // Ensure we're saving all required fields
     const bookData = {
+      id: product.id,
       title: product.title,
       author: product.author,
       image: product.image,

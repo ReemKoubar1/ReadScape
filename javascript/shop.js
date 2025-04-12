@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const productContainer = document.getElementById("products");
     const categoryFilter = document.getElementById("categoryFilter");
+    
 
     // Function to fetch products and display them
     async function fetchProducts() {
@@ -79,6 +80,7 @@ function selectItem(product) {
     
     // Ensure we're saving all required fields
     const bookData = {
+      id: product.id,
       title: product.title,
       author: product.author,
       image: product.image,
