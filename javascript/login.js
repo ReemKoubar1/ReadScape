@@ -30,6 +30,38 @@ function loginUser(event) {
 
     return false;
 }
+// Function to switch between login and registration forms
+function switchForm(formType) {
+    const container = document.getElementById('authContainer');
+    if (formType === 'register') {
+        container.classList.add('register-active');
+    } else {
+        container.classList.remove('register-active');
+    }
+}
+
+// Login functionality
+function loginUser(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value.trim().toLowerCase();
+    const password = document.getElementById("password").value.trim();
+
+    // Use the same key as registration
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+
+    const user = users.find(u => u.email === email && u.password === password);
+
+    if (user) {
+        alert("Welcome, " + user.name + "!");
+        document.getElementById("email").value = "";
+        document.getElementById("password").value = "";
+    } else {
+        alert("Invalid email or password.");
+    }
+
+    return false;
+}
 
 // Register functionality
 function registerUser(event) {
@@ -61,16 +93,10 @@ function registerUser(event) {
         alert("User already registered.");
         return false;
     }
-
-    if (users.length >= 3) {
-        alert("Maximum number of users already registered.");
-        return false;
-    }
-
     users.push({ name: nameInput, email: emailInput, password });
     localStorage.setItem("users", JSON.stringify(users));
 
-    alert(`Welcome, ${nameInput.charAt(0).toUpperCase() + nameInput.slice(1)}! You've been registered.`);
+    alert( "Welcome ", ` ${nameInput.charAt(0).toUpperCase() + nameInput.slice(1)}! You've been registered. `);
 
     document.getElementById("reg-name").value = "";
     document.getElementById("reg-email").value = "";
