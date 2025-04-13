@@ -1,72 +1,83 @@
 [
     {
-        "id": 51,
-        "title": "Harry Potter and the Philosopher's Stone",
-        "price": "$9.99",
-        "category": "Fantasy",
-        "image": "https://covers.openlibrary.org/b/isbn/9780747532743-L.jpg"
+      "id": 51,
+      "title": "Harry Potter and the Philosopher's Stone",
+      "price": "$9.99",
+      "category": "Fantasy",
+      "image": "https://covers.openlibrary.org/b/isbn/9780747532743-L.jpg",
+      "description": "A young boy discovers he is a wizard and begins his magical journey at Hogwarts School of Witchcraft and Wizardry, uncovering secrets about his past and destiny."
     },
     {
-        "id": 52,
-        "title": "The Da Vinci Code",
-        "price": "$11.99",
-        "category": "Thriller",
-        "image": "https://covers.openlibrary.org/b/isbn/9780307474278-L.jpg"
+      "id": 52,
+      "title": "The Da Vinci Code",
+      "price": "$11.99",
+      "category": "Thriller",
+      "image": "https://covers.openlibrary.org/b/isbn/9780307474278-L.jpg",
+      "description": "A symbologist and a cryptologist uncover a religious mystery protected by a secret society for centuries, leading them through a thrilling chase across Europe."
     },
     {
-        "id": 53,
-        "title": "The Hunger Games",
-        "price": "$10.99",
-        "category": "Science Fiction",
-        "image": "https://covers.openlibrary.org/b/isbn/9780439023528-L.jpg"
+      "id": 53,
+      "title": "The Hunger Games",
+      "price": "$10.99",
+      "category": "Science Fiction",
+      "image": "https://covers.openlibrary.org/b/isbn/9780439023528-L.jpg",
+      "description": "In a dystopian future, a brave girl volunteers to take her sister's place in a deadly televised competition where survival is the ultimate prize."
     },
     {
-        "id": 54,
-        "title": "Twilight",
-        "price": "$8.99",
-        "category": "Romance",
-        "image": "https://covers.openlibrary.org/b/isbn/9780316015844-L.jpg"
+      "id": 54,
+      "title": "Twilight",
+      "price": "$8.99",
+      "category": "Romance",
+      "image": "https://covers.openlibrary.org/b/isbn/9780316015844-L.jpg",
+      "description": "A teenage girl falls in love with a mysterious classmate who turns out to be a vampire, plunging her into a dangerous and enchanting world."
     },
     {
-        "id": 55,
-        "title": "The Alchemist",
-        "price": "$10.99",
-        "category": "Fiction",
-        "image": "https://covers.openlibrary.org/b/isbn/9780062315007-L.jpg"
+      "id": 55,
+      "title": "The Alchemist",
+      "price": "$10.99",
+      "category": "Fiction",
+      "image": "https://covers.openlibrary.org/b/isbn/9780062315007-L.jpg",
+      "description": "A young shepherd embarks on a journey to find a hidden treasure, discovering the true meaning of life and destiny through spiritual wisdom."
     },
     {
-        "id": 56,
-        "title": "A Brief History of Time",
-        "price": "$12.99",
-        "category": "Non-Fiction",
-        "image": "https://covers.openlibrary.org/b/isbn/9780553380163-L.jpg"
+      "id": 56,
+      "title": "A Brief History of Time",
+      "price": "$12.99",
+      "category": "Non-Fiction",
+      "image": "https://covers.openlibrary.org/b/isbn/9780553380163-L.jpg",
+      "description": "Renowned physicist Stephen Hawking explores fundamental questions about the universe, from black holes to time travel, in a way that's accessible to all readers."
     },
     {
-        "id": 57,
-        "title": "The Girl with the Dragon Tattoo",
-        "price": "$13.99",
-        "category": "Mystery",
-        "image": "https://covers.openlibrary.org/b/isbn/9780307454546-L.jpg"
+      "id": 57,
+      "title": "The Girl with the Dragon Tattoo",
+      "price": "$13.99",
+      "category": "Mystery",
+      "image": "https://covers.openlibrary.org/b/isbn/9780307454546-L.jpg",
+      "description": "A journalist and a brilliant hacker team up to solve a decades-old disappearance in a gripping tale of secrets, corruption, and revenge."
     },
     {
-        "id": 58,
-        "title": "Gone Girl",
-        "price": "$11.99",
-        "category": "Thriller",
-        "image": "https://covers.openlibrary.org/b/isbn/9780307588371-L.jpg"
+      "id": 58,
+      "title": "Gone Girl",
+      "price": "$11.99",
+      "category": "Thriller",
+      "image": "https://covers.openlibrary.org/b/isbn/9780307588371-L.jpg",
+      "description": "When a woman goes missing on her wedding anniversary, secrets unravel and suspicions rise, revealing a twisted and unpredictable story of deceit."
     },
     {
-        "id": 59,
-        "title": "The Fault in Our Stars",
-        "price": "$10.99",
-        "category": "Romance",
-        "image": "https://covers.openlibrary.org/b/isbn/9780525478812-L.jpg"
+      "id": 59,
+      "title": "The Fault in Our Stars",
+      "price": "$10.99",
+      "category": "Romance",
+      "image": "https://covers.openlibrary.org/b/isbn/9780525478812-L.jpg",
+      "description": "Two teenagers with cancer fall in love and navigate life, love, and heartbreak with humor and courage in this moving and unforgettable story."
     },
     {
-        "id": 60,
-        "title": "Angels & Demons",
-        "price": "$11.99",
-        "category": "Thriller",
-        "image": "https://covers.openlibrary.org/b/isbn/9780743493468-L.jpg"
+      "id": 60,
+      "title": "Angels & Demons",
+      "price": "$11.99",
+      "category": "Thriller",
+      "image": "https://covers.openlibrary.org/b/isbn/9780743493468-L.jpg",
+      "description": "A Harvard symbologist races against time to stop a deadly conspiracy involving a secret society, science, and the Vatican."
     }
-]
+  ]
+  
