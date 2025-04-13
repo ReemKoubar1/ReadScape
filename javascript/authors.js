@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function displayAuthors(authorsList) {
         authorContainer.innerHTML = '';
-        backArrowContainer.style.display = "none"; // Hide back arrow when displaying authors
+        backArrowContainer.style.display = "none"; 
         authorsList.forEach(author => {
             const authorCard = document.createElement('div');
             authorCard.classList.add('author-card');
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </ul>
             </div>
         `;
-        backArrowContainer.style.display = "block"; // Show back arrow when displaying details
+        backArrowContainer.style.display = "block"; 
     }
 
     backArrow.addEventListener("click", () => {

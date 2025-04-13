@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             localStorage.setItem('cart', JSON.stringify(cart));
 
-            // Update badge
+            
             if (badge) {
                 badge.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
             }

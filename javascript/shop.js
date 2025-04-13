@@ -17,7 +17,6 @@ $(document).ready(function () {
                 );
             });
 
-            // Render products by category
             function renderProducts(selectedCategory) {
                 $productContainer.empty();
 
