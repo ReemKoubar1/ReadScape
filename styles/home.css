@@ -472,6 +472,22 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+@media(max-width:768px){
+    .product-section{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .product-card{
+        width: 100%;
+        padding: 12px;
+    }
+    .product-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
 
 /* FAQs Section */
 .faq-container {
