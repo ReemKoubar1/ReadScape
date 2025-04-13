@@ -1,5 +1,5 @@
 
-  /* book-details.css */
+
   .book-container {
     display: flex;
     max-width: 1200px;
@@ -79,7 +79,7 @@
     transform: translateY(-2px);
 }
 
-/* Makes sure price and category are visible */
+
 .price {
     color: #e74c3c;
     font-weight: bold;

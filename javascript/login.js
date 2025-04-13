@@ -1,4 +1,4 @@
-// Function to switch between login and registration forms
+
 function switchForm(formType) {
     const container = document.getElementById('authContainer');
     if (formType === 'register') {
@@ -8,14 +8,14 @@ function switchForm(formType) {
     }
 }
 
-// Login functionality
+
 function loginUser(event) {
     
 
     const email = document.getElementById("email").value.trim().toLowerCase();
     const password = document.getElementById("password").value.trim();
 
-    // Use the same key as registration
+   
     const users = JSON.parse(localStorage.getItem("users")) || [];
 
     const user = users.find(u => u.email === email && u.password === password);
@@ -30,7 +30,7 @@ function loginUser(event) {
 
     return false;
 }
-// Function to switch between login and registration forms
+
 function switchForm(formType) {
     const container = document.getElementById('authContainer');
     if (formType === 'register') {
@@ -40,14 +40,14 @@ function switchForm(formType) {
     }
 }
 
-// Login functionality
+
 function loginUser(event) {
     event.preventDefault();
 
     const email = document.getElementById("email").value.trim().toLowerCase();
     const password = document.getElementById("password").value.trim();
 
-    // Use the same key as registration
+   
     const users = JSON.parse(localStorage.getItem("users")) || [];
 
     const user = users.find(u => u.email === email && u.password === password);
@@ -63,7 +63,7 @@ function loginUser(event) {
     return false;
 }
 
-// Register functionality
+
 function registerUser(event) {
    
 
@@ -78,15 +78,7 @@ function registerUser(event) {
         return false;
     }
 
-    // Optional: allow only certain users (disabled for now)
-    // const matchedUser = allowedUsers.find(
-    //     user => user.name.toLowerCase() === nameInput && user.email.toLowerCase() === emailInput
-    // );
-
-    // if (!matchedUser) {
-    //     alert("User not allowed to register.");
-    //     return false;
-    // }
+   
 
     let users = JSON.parse(localStorage.getItem("users")) || [];
 
@@ -109,13 +101,13 @@ function registerUser(event) {
     return false;
 }
 
-// Clear all registered users (for testing)
+
 function clearDemoUsers() {
     localStorage.removeItem("users");
     alert("User data has been cleared.");
 }
 
-// Add default users if none exist
+
 const defaultUsers = [
     { name: "Farah", email: "farah@gmail.com", password: "1234" },
     { name: "Reem", email: "reem@gmail.com", password: "1234" },

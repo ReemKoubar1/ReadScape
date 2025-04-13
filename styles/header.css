@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +12,8 @@ body {
 }
 
 header {
-    background: #fcfbfc; /* White Background */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+    background: #fcfbfc; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
     position: relative;
     z-index: 1000;
@@ -46,9 +46,9 @@ header {
 }
 
 .links.desktop .link a:hover {
-    color: #6a11cb; /* Purple Accent */
-    background: #f0f0f0; /* Light Gray Background on Hover */
-    transform: scale(1.1); /* Slight Scaling Effect */
+    color: #6a11cb; 
+    background: #f0f0f0; 
+    transform: scale(1.1); 
 }
 
 .actions {
@@ -95,7 +95,7 @@ header {
     align-items: center;
     gap: 20px;
 }
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .links.desktop {
         display: none;

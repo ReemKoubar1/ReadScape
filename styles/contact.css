@@ -9,7 +9,7 @@
     padding: 50px 20px;
     color: white;
     overflow: hidden;
-    height: 400px; /* Adjust height as needed */
+    height: 400px; 
 }
 
 
@@ -19,9 +19,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire section */
-    z-index: -1; /* Places the image behind the text */
-    filter: brightness(0.7); /* Optional: Darkens the image for better text visibility */
+    object-fit: cover; 
+    z-index: -1; 
+    filter: brightness(0.7); 
 }
 
 .left-hero {
@@ -57,7 +57,7 @@
     transform: scale(1.05);
 }
 
-/* Contact Form Section */
+
 
 .contact-form-section {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -71,24 +71,24 @@
     margin: 20px auto;
     max-width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    z-index: 1; /* Ensure content stays on top */
+    z-index: 1; 
 }
 
-/* Video Background */
+
 .video-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Place video behind the content */
+    z-index: -1; 
 }
 
 .video-background video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the video covers the entire section */
-    opacity: 0.5; /* Optional: adjust opacity to make content stand out more */
+    object-fit: cover; 
+    opacity: 0.5; 
 }
 
 .contact-form-section:hover {
@@ -152,7 +152,7 @@
     transform: scale(1.05);
 }
 
-/* Contact Info Section */
+
 .contact-info-section {
     display: flex;
     flex-direction: column;
@@ -214,12 +214,12 @@
 }
 
 
-/* Popup container styles */
+
 .popup {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  /* Centers the popup */
+    transform: translate(-50%, -50%);  
     background: white;
     padding: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -227,32 +227,32 @@
     text-align: center;
     z-index: 1000;
     width: 80%;
-    max-width: 500px;  /* Max width for the popup */
-    display: none;  /* Hidden by default */
+    max-width: 500px; 
+    display: none;  
 }
 
-/* Popup Content */
+
 .popup-content {
     font-size: 1.2rem;
     padding: 20px;
     text-align: center;
 }
 
-/* Title */
+
 .popup-content h3 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
 }
 
-/* Message Paragraph */
+
 .popup-content p {
     font-size: 16px;
     color: #555;
     margin-bottom: 20px;
 }
 
-/* CTA Button inside the popup */
+
 .popup .cta-button {
     background-color: #007BFF;
     color: white;
@@ -262,10 +262,10 @@
     cursor: pointer;
     font-size: 16px;
     text-align: center;
-    margin-bottom: 20px; /* Adding space below the button */
+    margin-bottom: 20px; 
 }
 
-/* Close Button inside the Popup */
+
 .close-popup {
     background-color: #ff6600;
     color: white;
@@ -275,10 +275,10 @@
     cursor: pointer;
     font-size: 16px;
     text-align: center;
-    margin-top: 10px;  /* Space between message and close button */
+    margin-top: 10px;  
 }
 
-/* Hover Effects */
+
 .cta-button:hover,
 .close-popup:hover {
     opacity: 0.8;

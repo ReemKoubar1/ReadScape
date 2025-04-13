@@ -7,7 +7,7 @@ $(document).ready(function () {
             const response = await fetch('data/product.json');
             const products = await response.json();
 
-            // Populate category filter
+            
             const categories = new Set();
             products.forEach(product => categories.add(product.category));
 
@@ -17,7 +17,7 @@ $(document).ready(function () {
                 );
             });
 
-            // Render products by category
+            
             function renderProducts(selectedCategory) {
                 $productContainer.empty();
 
@@ -54,10 +54,10 @@ $(document).ready(function () {
                 });
             }
 
-            // Initial render
+            
             renderProducts("");
 
-            // On category change
+            
             $categoryFilter.on("change", function () {
                 renderProducts($(this).val());
             });
