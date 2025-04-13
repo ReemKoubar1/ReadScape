@@ -1,8 +1,8 @@
 function selectItem(product) {
-    // Verify we have the right product data
+   
     console.log("Product data:", product);
     
-    // Ensure we're saving all required fields
+    
     const bookData = {
       id: product.id,
       title: product.title,
@@ -41,7 +41,7 @@ async function loadProducts(sectionId, jsonFile) {
             card.querySelector('.add-to-cart').addEventListener('click', () => {
                 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-                // Optional: avoid duplicate entries
+                
                 if (!cart.find(item => item.title === product.title)) {
                     cart.push({...product,quantity:1});
                     localStorage.setItem('cart', JSON.stringify(cart));
@@ -50,7 +50,7 @@ async function loadProducts(sectionId, jsonFile) {
                     alert(`${product.title} is already in the cart`);
                 }
 
-                // Update badge count
+                
                 const badge = document.getElementById("badge");
                 if (badge) badge.textContent = cart.length;
             });
@@ -80,16 +80,16 @@ document.addEventListener('DOMContentLoaded', () => {
     loadProducts('products', 'data/product.json');
 document.getElementsByClassName("add-to-cart").forEach((addToCartButton)=>{
 addToCartButton.addEventListener('click', () => {
-    // Get current cart from localStorage
+    
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // Add current product
+    
     cart.push(product);
 
-    // Save updated cart back to localStorage
+    
     localStorage.setItem('cart', JSON.stringify(cart));
 
-    // Update badge count (optional)
+    
     document.getElementById("badge").textContent = cart.length;
 });
 }
@@ -122,23 +122,23 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
 });
 
 document.addEventListener('DOMContentLoaded', async () => {
-    // 1. fetch from json
+    
     try {
         const response = await fetch('data/product.json'); 
         if (!response.ok) {
             throw new Error('Failed to load products.json');
         }
-        window.allProducts = await response.json(); // Fetch products from the JSON file
+        window.allProducts = await response.json(); 
     } catch (error) {
         console.error('Error loading products:', error);
     }
 
-    // 2. Get DOM elements
+    
     const searchInput = document.getElementById('search-input');
     const searchDropdown = document.getElementById('search-dropdown');
     let selectedIndex = -1;
 
-    // 3. Improved search function
+    
     function handleSearch() {
         const term = searchInput.value.trim().toLowerCase();
         if (term.length < 1) {
@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
    
 
-    // 6. Keyboard navigation
+    
     searchInput.addEventListener('keydown', (e) => {
         const items = searchDropdown.querySelectorAll('.search-dropdown-item');
         
@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   
 
-    // 7. Event listeners
+    
     searchInput.addEventListener('input', handleSearch);
     searchInput.addEventListener('focus', () => {
         if (searchInput.value.trim().length > 0) {
@@ -238,16 +238,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    // Close when clicking outside
+    
     document.addEventListener('click', (e) => {
         if (!searchInput.contains(e.target) && !searchDropdown.contains(e.target)) {
             searchDropdown.style.display = 'none';
         }
     });
 
-    // when we select item 
+    
 
-    // Ensure the loadProducts function is defined somewhere
+    
     loadProducts('bestsellers', 'data/bestseller.json');
     loadProducts('new-arrivals', 'data/new-arrival.json');
     loadProducts('products', 'data/product.json');

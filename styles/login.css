@@ -30,13 +30,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Aligning inputs to the center */
+    align-items: center; 
     width: 100%;
     max-width: 600px; 
 }
 
 .register-form form div {
-    /* width: 100%; */
+    
     max-width: 400px;
     align-items: center;
 }
@@ -51,15 +51,15 @@ body {
 .register-form {
     
     display: flex;
-    justify-content: center; /* Centers the form horizontally */
-    align-items: center; /* Centers the form vertically */
+    justify-content: center; 
+    align-items: center; 
     height: 100vh;
     max-width: 500px;
     width: 100%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    opacity: 0;  /* Hide initially */
+    opacity: 0;  
     visibility: hidden;
     transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
 }
@@ -106,7 +106,7 @@ body {
     max-width: 500px; 
 }
 
-/* Styling for inputs and buttons */
+
 
 
 .form-section input, 
@@ -114,7 +114,7 @@ body {
 .form-section button, 
 .register-form button {
 
-/* width: 100%; */
+
 
 padding: 12px 80px;
 
@@ -129,7 +129,7 @@ margin-bottom: 15px;
 
 
 .form-section button {
-    /* width: 100%; */
+   
     padding: 12px;
     font-size: 16px;
     font-weight: bold;
@@ -230,9 +230,7 @@ margin-bottom: 15px;
     overflow: hidden;
   }
 
-  /* ===============================
-     Form Header Style
-  =============================== */
+
   .form-section h2 {
     text-align: center;
     margin-bottom: 25px;
@@ -240,13 +238,11 @@ margin-bottom: 15px;
     font-size: 24px;
   }
   
-  /* ===============================
-     Form Element Styling
-  =============================== */
+ 
   .form-section form {
     display: flex;
     flex-direction: column;
-    /* gap: 20px; */
+    
     align-items: center;
   }
   
@@ -263,12 +259,12 @@ margin-bottom: 15px;
     font-size: 18px;
   }
   
-  /* Input Field Style */
+  
   .form-section input[type="email"],
   .form-section input[type="password"],
   .form-section input[type="text"] {
     width: 100%;
-    padding: 12px 12px 12px 40px;  /* Space on the left for icon */
+    padding: 12px 12px 12px 40px;  
     border: 1px solid #ddd;
     border-radius: 25px;
     transition: border-color 0.3s ease;
@@ -279,9 +275,7 @@ margin-bottom: 15px;
     border-color: #ffa500;
   }
   
-  /* ===============================
-     Button Styles
-  =============================== */
+
   .form-section button[type="submit"] {
     background-color: #ff7b00;
     color: #fff;
@@ -300,9 +294,7 @@ margin-bottom: 15px;
     background-color: #e86e00;
   }
   
-  /* ===============================
-     Auxiliary Text & Links
-  =============================== */
+  
   .form-section p {
     text-align: center;
     font-size: 14px;
@@ -319,9 +311,7 @@ margin-bottom: 15px;
     text-decoration: underline;
   }
   
-  /* ===============================
-     Responsive Considerations
-  =============================== */
+  
   @media (max-width: 576px) {
     .auth-container {
       margin: 50px 20px;

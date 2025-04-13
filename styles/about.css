@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     line-height: 1.6;
 }
 
-/* Hero Section */
+
 .hero-section {
     display: flex;
     align-items: center;
@@ -66,7 +66,7 @@ body {
     transform: scale(1.05);
 }
 
-/* About Section */
+
 .about-container {
     display: flex;
     flex-direction: column;
@@ -142,7 +142,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Mission & Vision Section */
+
 .mission-vision {
     display: flex;
     flex-direction: column;
@@ -161,18 +161,18 @@ body {
 }
 
 .mission-vision h2 {
-    margin-bottom: 30px; /* Space between title and content */
+    margin-bottom: 30px; 
 }
 
-/* New wrapper to align Mission & Vision horizontally */
+
 .mission-vision-content {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Space between the two sections */
-    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 40px; 
+    flex-wrap: wrap; 
 }
 
-/* Individual sections */
+
 .mission,
 .vision {
     display: flex;
@@ -204,7 +204,7 @@ body {
     line-height: 1.6;
 }
 
-/* Team Section */
+
 .team-container {
     display: flex;
     flex-direction: column;
