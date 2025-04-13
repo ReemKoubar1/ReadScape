@@ -138,7 +138,7 @@
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff6600;
+    background-color: #ffa500;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -199,7 +199,7 @@
 
 .info-box i {
     font-size: 1.5rem;
-    color: #ff6600;
+    color: #ffa500;
 }
 
 .info-box p {
