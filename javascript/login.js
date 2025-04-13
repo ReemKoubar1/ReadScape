@@ -10,7 +10,7 @@ function switchForm(formType) {
 
 // Login functionality
 function loginUser(event) {
-    event.preventDefault();
+    
 
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value.trim();
@@ -33,7 +33,7 @@ function loginUser(event) {
 
 
 function registerUser(event) {
-    event.preventDefault();
+   
 
     
     const allowedUsers = [
@@ -47,30 +47,30 @@ function registerUser(event) {
     const password = document.getElementById("reg-password").value;
     const confirmPassword = document.getElementById("reg-confirm-password").value;
 
-    // Check if passwords match
+   
     if (password !== confirmPassword) {
         alert("Passwords do not match!");
         return false;
     }
 
-    // Check if the user is allowed to register
+ 
     const matchedUser = allowedUsers.find(
         user => user.name.toLowerCase() === nameInput && user.email.toLowerCase() === emailInput
     );
 
     if (!matchedUser) {
-        alert("Welcome to ReadScape");
+        alert("Sorry, you're not authorized to register.");
         return false;
     }
 
-    // Get existing users from localStorage
+    
     let users = JSON.parse(localStorage.getItem("demoUsers")) || [];
     if (users.find(user => user.name === nameInput)) {
         alert("User already registered.");
         return false;
     }
 
-    // Check if the user limit is reached
+   
     if (users.length >= 3) {
         alert("Maximum number of users already registered.");
         return false;

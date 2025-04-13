@@ -37,7 +37,7 @@
     {
         "id": 16,
         "name": "جبران خليل جبران",
-        "nationality": "لبناني",
+        "nationality": "Lebanese",
         "birth_year": 1883,
         "books": [
             "النبي",
@@ -60,7 +60,7 @@
     {
         "id": 17,
         "name": "إميل نصرالله",
-        "nationality": "لبناني",
+        "nationality": "Lebanese",
         "birth_year": 1941,
         "books":    [ "الباهرة" ],
         "image": "https://static.srpcdigital.com/styles/1037xauto/public/2018/09/04/1536068801706207200.jpg.webp"}
@@ -154,6 +154,15 @@
         "birth_year": 1821,
         "books": ["Crime and Punishment", "The Brothers Karamazov"],
         "image": "https://www.thoughtco.com/thmb/m1OBwm7kZ3wx6GKKOJubQLtOrzw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-961442608-68a9f6aaa0ef455890f2a95b4357941c.jpg"
+    },
+
+    {
+        "id": 16,
+        "name": "غسان  كنفاني",
+        "nationality": "Palestinian",
+        "birth_year": 1936,
+        "books": ["رجال في الشمس", "عائد إلى حيفا"],
+        "image": "https://www.palquest.org/sites/default/files/media/Ghassan_Kanafani.jpg"
     }
 ]
 

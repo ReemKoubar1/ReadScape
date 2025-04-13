@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 <img src="${author.image}" alt="${author.name}" class="author-details-image" />
                 <h2>${author.name}</h2>
                 <p><strong>Nationality:</strong> ${author.nationality}</p>
-                <p><strong>Bio:</strong> ${author.bio}</p> 
                 <h3>Books</h3>
                 <ul>
                     ${author.books.map(book => `<li>${book}</li>`).join('')}
