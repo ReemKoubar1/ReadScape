@@ -72,41 +72,12 @@ function registerUser(event) {
     const password = document.getElementById("reg-password").value;
     const confirmPassword = document.getElementById("reg-confirm-password").value;
 
-<<<<<<< HEAD
    
-=======
->>>>>>> d963721c0ee9e31719dcaee1c6b9c08907d49879
     if (password !== confirmPassword) {
         alert("Passwords do not match!");
         return false;
     }
 
-<<<<<<< HEAD
- 
-    const matchedUser = allowedUsers.find(
-        user => user.name.toLowerCase() === nameInput && user.email.toLowerCase() === emailInput
-    );
-
-    if (!matchedUser) {
-        alert("Sorry, you're not authorized to register.");
-        return false;
-    }
-
-    
-    let users = JSON.parse(localStorage.getItem("demoUsers")) || [];
-    if (users.find(user => user.name === nameInput)) {
-        alert("User already registered.");
-        return false;
-    }
-
-   
-    if (users.length >= 3) {
-        alert("Maximum number of users already registered.");
-        return false;
-    }
-
-    // Add new user and save to localStorage
-=======
     // Optional: allow only certain users (disabled for now)
     // const matchedUser = allowedUsers.find(
     //     user => user.name.toLowerCase() === nameInput && user.email.toLowerCase() === emailInput
@@ -123,7 +94,6 @@ function registerUser(event) {
         alert("User already registered.");
         return false;
     }
->>>>>>> d963721c0ee9e31719dcaee1c6b9c08907d49879
     users.push({ name: nameInput, email: emailInput, password });
     localStorage.setItem("users", JSON.stringify(users));
 
